@@ -1,3 +1,4 @@
+<?php global $dm_settings; ?>
 <div class="footer row">
     <div class="copyright-and-tribute col-md-4 no-padding">
         <div class="copyright">
