@@ -8,7 +8,7 @@
 <div class="row">
 <!--slideshow, featured and sidebar -->
     <div class="col-md-10 dmbs-main">
-<?Php if ( function_exists( 'wpsp_Slideshow' ) ) { wpsp_Slideshow('1,0,1,0'); } ?>
+<?php if ( function_exists( 'wpsp_Slideshow' ) ) { wpsp_Slideshow('1,0,1,0'); } ?>
 <?php echo do_shortcode('[wpscp]'); ?>	
     </div>
 

@@ -149,7 +149,7 @@ load_theme_textdomain( 'pogonlwow', get_template_directory() . '/languages' );
         $input['gplus'] = wp_filter_nohtml_kses( $input['gplus'] );
         $input['sspl'] = wp_filter_nohtml_kses( $input['sspl'] );
         $input['store'] = wp_filter_nohtml_kses( $input['store'] );
-        $input['join'] = wp_filter_nohtml_kses( $input['join'] );
+        $input['store'] = wp_filter_nohtml_kses( $input['join'] );
 
 
 

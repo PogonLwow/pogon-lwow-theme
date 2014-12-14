@@ -25,6 +25,7 @@
                 );
                 ?>
             </div>
+
 <div class="col-md-3">
     <div class="search-things">
         <form method="get" id="searchform" action="<?php bloginfo('home'); ?>/">
