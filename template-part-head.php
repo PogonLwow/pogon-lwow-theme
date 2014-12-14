@@ -13,8 +13,8 @@
         <?php endif; ?>
         <?php endif; ?>
         <div class="social col-md-5"><div class="watch-us">Zobacz nas na:</div>
-            <a href="<?php echo $dm_settings['gplus'] ?>">
-                <i class="icon-gplus social-icons gp"></i>
+            <a href="<?php echo $dm_settings['vk'] ?>">
+                <i class="icon-vkontakte social-icons vk"></i>
             </a>
             <a href="<?php echo $dm_settings['twitter'] ?>">
                 <i class="icon-twitter social-icons tw"></i>

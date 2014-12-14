@@ -146,7 +146,7 @@ load_theme_textdomain( 'pogonlwow', get_template_directory() . '/languages' );
         
 	    $input['twitter'] = wp_filter_nohtml_kses( $input['twitter'] );
 	    $input['facebook'] = wp_filter_nohtml_kses( $input['facebook'] );
-        $input['gplus'] = wp_filter_nohtml_kses( $input['gplus'] );
+        $input['gplus'] = wp_filter_nohtml_kses( $input['vk'] );
         $input['sspl'] = wp_filter_nohtml_kses( $input['sspl'] );
         $input['store'] = wp_filter_nohtml_kses( $input['store'] );
         $input['join'] = wp_filter_nohtml_kses( $input['join'] );
@@ -214,10 +214,10 @@ load_theme_textdomain( 'pogonlwow', get_template_directory() . '/languages' );
                         <label for="twitter"><?php _e('Link do strony facebooka Pogoni','pogonlwow') ;?></label>
                     </td>
                 </tr>
-                <tr valign="top"><th scope="row"><?php _e('Link do G+','pogonlwow') ;?></th>
+                <tr valign="top"><th scope="row"><?php _e('Link do VK','pogonlwow') ;?></th>
                     <td>
-                        <input type="text" id="gplus" name="dm_options[gplus]" value="<?php esc_attr_e($settings['gplus']); ?>" />
-                        <label for="gplus"><?php _e('Link do strony Google Plus Pogoni','pogonlwow') ;?></label>
+                        <input type="text" id="gplus" name="dm_options[vk]" value="<?php esc_attr_e($settings['vk']); ?>" />
+                        <label for="gplus"><?php _e('Link do strony VKontaktie Pogoni','pogonlwow') ;?></label>
                     </td>
                 </tr>
                 <tr valign="top"><th><h3>Prawa kolumna</h3></th></tr>

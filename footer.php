@@ -11,8 +11,8 @@
         </div>
     </div>
     <div class="col-md-12 no-padding">
-        <a href="<?php echo $dm_settings['gplus'] ?>">
-            <i class="icon-gplus social-icons gp"></i>
+        <a href="<?php echo $dm_settings['vk'] ?>">
+            <i class="icon-vkontakte social-icons vk"></i>
         </a>
         <a href="<?php echo $dm_settings['twitter'] ?>">
             <i class="icon-twitter social-icons tw"></i>

@@ -54,6 +54,11 @@ a:hover .gp {
     outline: none;
     color: white;
 }
+a:hover .vk {
+    background-color: rgba(89,125,163,1);
+    outline: none;
+    color: white;
+}
 .dmbs-container {} .dmbs-header {
     margin-top: 12px;
 }
@@ -64,16 +69,15 @@ a:hover .gp {
 .search-things {
     border: 1px solid #cbcbcb;
     overflow: hidden;
-    width:90%;
+    width: 90%;
     margin: 9px 5px 9px 0px;
     -webkit-border-radius: 15px 15px 15px 15px;
-            border-radius: 15px 15px 15px 15px;
+    border-radius: 15px 15px 15px 15px;
     padding-left: 10px;
     padding-right: 10px;
-    -webkit-box-shadow:inset 0 1px 1px 0 #CCC;
-            box-shadow:inset 0 1px 1px 0 #CCC;
+    -webkit-box-shadow: inset 0 1px 1px 0 #CCC;
+    box-shadow: inset 0 1px 1px 0 #CCC;
     z-index: 2;
-
 }
 .button-search {
     border: none;
@@ -99,7 +103,7 @@ input.search {
     position: relative;
     float: left;
     font-weight: lighter;
-/*    margin: 15px 5px 15px 0px;*/
+    /*    margin: 15px 5px 15px 0px;*/
 }
 .post-teaser {
     background-color: white;
@@ -464,7 +468,6 @@ a.comment-reply-link {
     font-size: 16px;
     margin-top: 0;
 }
-
 /*vs*/
 
 .widget h4.event-title {
@@ -768,7 +771,6 @@ a.join {
     color: #e8c569;
     font-weight: bold;
 }
-    
 .sponsors,
 .clubs,
 .partnership {
@@ -798,6 +800,9 @@ a.join {
 .single-sponsor {
     padding-left: 30px;
     padding-right: 30px;
+}
+.single-club {
+    margin-right: 5px;
 }
 .clubs,
 .partnership {
@@ -847,4 +852,7 @@ li.album:first-child {
 .album_cover {
     width: 230px;
     height: auto;
+}
+.event-league {
+    text-align: center;
 }

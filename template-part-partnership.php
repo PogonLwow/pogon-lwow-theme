@@ -11,7 +11,7 @@
                 while( $products->have_posts() ) {
                     $products->the_post(); ?>
         
-            <div class="single-club col-md-3">
+            <div class="single-club col-md-5">
                 <a href="<?php the_title(); ?>">
 				<?php the_post_thumbnail("medium"); ?>
                 </a>

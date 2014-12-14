@@ -1,3 +1,5 @@
+<?php global $dm_settings; ?>
+
 <div class="row">
     <div class="sponsors">
         <div class="sponsors-header">
