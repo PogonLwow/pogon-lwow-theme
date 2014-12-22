@@ -55,7 +55,7 @@ a:hover .gp {
     color: white;
 }
 a:hover .vk {
-    background-color: rgba(89,125,163,1);
+    background-color: rgba(89, 125, 163, 1);
     outline: none;
     color: white;
 }
@@ -462,7 +462,8 @@ a.comment-reply-link {
 .widget h3,
 .sponsors h3,
 .clubs h3,
-.partnership h3 {
+.partnership h3,
+.position h3 {
     font-weight: bold;
     text-transform: uppercase;
     font-size: 16px;
@@ -855,4 +856,24 @@ li.album:first-child {
 }
 .event-league {
     text-align: center;
+}
+.position {
+    font-weight: bold;
+    padding: 20px 5px 5px 5px;
+}
+.pos-number {
+    font-size: 50px;
+    font-weight: bold;
+}
+.table-link {
+    margin-top: 30px;
+}
+.table-link a {
+    padding: 10px 10px 10px 10px;
+    font-weight: normal;
+    border: 1px solid #ececec;
+    color: #333;
+}
+.medal {
+    font-size: 18px;
 }
