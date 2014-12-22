@@ -152,8 +152,8 @@ load_theme_textdomain( 'pogonlwow', get_template_directory() . '/languages' );
         $input['sspl'] = wp_filter_nohtml_kses( $input['sspl'] );
         $input['store'] = wp_filter_nohtml_kses( $input['store'] );
         $input['join'] = wp_filter_nohtml_kses( $input['join'] );
-        $input['join'] = wp_filter_nohtml_kses( $input['position'] );
-        $input['join'] = wp_filter_nohtml_kses( $input['tabela'] );
+        $input['position'] = wp_filter_nohtml_kses( $input['position'] );
+        $input['tabela'] = wp_filter_nohtml_kses( $input['tabela'] );
 
 
 
@@ -242,7 +242,7 @@ load_theme_textdomain( 'pogonlwow', get_template_directory() . '/languages' );
                 <tr valign="top"><th scope="row"><?php _e('Gdzie ma prowadzić link','pogonlwow') ;?></th>
                     <td>
                         <input type="text" id="store" name="dm_options[join]" value="<?php esc_attr_e($settings['join']); ?>" />
-                        <label for="store"><?php _e('"dołącz do naszych sponsorów"','pogonlwow') ;?></label>
+                        <label for="join"><?php _e('"dołącz do naszych sponsorów"','pogonlwow') ;?></label>
                     </td>
                 </tr>
                 <tr valign="top"><th><h3>Miejsce w tabeli</h3></th></tr>

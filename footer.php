@@ -7,7 +7,7 @@
         <div class="tribute">
             <div class="graf">Grafika: <a href="http://wiktorkolodziej.pl">wiktorkolodziej.pl</a>
             </div>
-            <div class="real">Realizacja: <a href="http://twitter.com/stsdc">stsdc</a>
+            <div class="real">Realizacja: <a href="http://vk.com/stsdc">stsdc</a>
             </div>
         </div>
     </div>

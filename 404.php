@@ -21,17 +21,14 @@
 <?php get_template_part('template-part', 'topnav'); ?>
 
 <?php
-$imagesDir = "wp-content/themes/" . get_template() . '/img/404/';
+$imagesDir = get_template_directory_uri() . '/img/404/';
 $images = glob($imagesDir . '*.{jpg,jpeg,png,gif}', GLOB_BRACE);
 $randomImage = $images[array_rand($images) ]; // See comments
-
 ?>
     <!-- start content container -->
     <div class="row dmbs-content">
-
-
         <div class="col-md-10 er404-container">
-        <div class="er404" id="er404" style="background-image: url(./<?php echo $randomImage; ?>)">
+        <div class="er404" id="er404" style="background-image: url( <?php echo get_template_directory_uri() . '/img/404/' . rand(1,4);?>.jpg)">
             <div class="tajoj">
                 <div class="e404">404</div>
                                 Ta joj !
