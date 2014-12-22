@@ -881,3 +881,7 @@ li.album:first-child {
     height: auto;
     float: left;
 }
+.gallery-item a{
+    padding: 8px;
+    color: #333;
+}

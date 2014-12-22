@@ -21,7 +21,7 @@
         <div class="half">
         <div class="sklep">
             <a href="<?php echo $dm_settings['store'] ?>">
-                <img src="<?php bloginfo('template_directory'); ?>/img/sklep.jpg"/>
+                <img src="<?php bloginfo('template_directory'); ?>/img/sklep2.png"/>
             </a>
         </div>
             </div>
