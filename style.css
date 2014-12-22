@@ -885,3 +885,11 @@ li.album:first-child {
     padding: 8px;
     color: #333;
 }
+.sp-template-player-photo {
+    width:27%;
+    float: left;
+}
+.sp-template-player-details {
+    width:73%;
+    float: left;
+}
