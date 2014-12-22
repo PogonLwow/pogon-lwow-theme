@@ -876,3 +876,8 @@ li.album:first-child {
 .medal {
     font-size: 18px;
 }
+.player-gallery-group-name {
+    width:100%;
+    height: auto;
+    float: left;
+}
