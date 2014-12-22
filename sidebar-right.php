@@ -8,11 +8,6 @@
             <div class="position">Pozycja w rankingu</div>
         </div>
         <div class="half">
-        <div class="sspl">
-            <a href="<?php echo $dm_settings['sspl'] ?>">
-                <img src="<?php bloginfo('template_directory'); ?>/img/sspl.jpg"/>
-            </a>
-        </div>
         <div class="sklep">
             <a href="<?php echo $dm_settings['store'] ?>">
                 <img src="<?php bloginfo('template_directory'); ?>/img/sklep.jpg"/>
