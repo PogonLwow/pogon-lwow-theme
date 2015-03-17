@@ -423,8 +423,15 @@ a.comment-reply-link {
     padding: 0 10px 0 10px;
     border-right: 1px solid rgba(100, 100, 100, 0.3);
 }
+.footer-menu li li {
+    border: none;
+}
 .footer-menu li:last-child {
     border-right: none;
+}
+.footer-menu .dropdown-menu {
+    bottom: 100%;
+    top: auto;
 }
 .no-margin {
     margin: 0;
@@ -471,20 +478,20 @@ a.comment-reply-link {
 }
 /*vs*/
 
-.widget h4.event-title {
+.widget h4.sp-event-title {
     margin: 10px 0 10px 0;
     display: inline-block;
     text-align: center;
     width: 100%;
     color: #333;
 }
-.widget h4.event-title a {
+.widget h4.sp-event-title a {
     color: #333;
 }
 .widget h4 a:hover {
     color: #e8c569;
 }
-.widget h5.event-results {
+.widget h5.sp-event-results {
     font-weight: bold;
     font-size: 30px;
 }
@@ -493,9 +500,9 @@ a.comment-reply-link {
 .sp-event-blocks thead {
     display: none;
 }
-.sp-event-blocks .event-date,
-.sp-event-blocks .event-time,
-.sp-event-blocks .event-results {
+.sp-event-blocks .sp-event-date,
+.sp-event-blocks .sp-event-time,
+.sp-event-blocks .sp-event-results {
     text-align: center;
     display: block;
     margin: 10px 20%;
@@ -825,12 +832,20 @@ a.join {
     background: white;
     height: 100%;
     margin-right: 5px;
-    height: 230px;
+    height: 224px;
     text-align: center;
     padding: 20px;
 }
 .sklep {
     float: right;
+}
+.sklep p {
+    font-weight: bold;
+    position: absolute;
+    width: 112px;
+    height: 100px;
+    right: 0;
+    margin-top: 65px;
 }
 .sspl {
     float: right;
@@ -877,19 +892,83 @@ li.album:first-child {
     font-size: 18px;
 }
 .player-gallery-group-name {
-    width:100%;
+    width: 100%;
     height: auto;
     float: left;
 }
-.gallery-item a{
+.gallery-item a {
     padding: 8px;
     color: #333;
 }
 .sp-template-player-photo {
-    width:27%;
+    width: 27%;
     float: left;
 }
 .sp-template-player-details {
-    width:73%;
+    width: 73%;
     float: left;
+}
+.well textarea {
+    width: 100%;
+    border: 1px solid rgba(39, 38, 126, 0.5);
+    background-color: #F6F6F6;
+}
+.well input {
+    padding: 7px;
+    border: 1px solid rgba(39, 38, 126, 0.5);
+}
+.well input:hover {
+    background-color: #27267E;
+    color: #F6F6F6;
+}
+.wsp {
+    padding: 5px;
+    background: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+.wsp a {
+    color: #333333;
+}
+.fadein {
+    position: relative;
+
+}
+.fadein figure {
+    position: absolute;
+    left: 0;
+    top: 0;
+
+}
+figcaption {
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+        background-color: rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    color: rgba(255, 255, 255, 0.8);
+    padding: 5px;
+    border-radius: 2px;
+}
+.player-btn {
+    position: absolute;
+    top:20px;
+    left:20px;
+    padding: 5px;
+    border:1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 2px;
+    z-index: 4;
+    font-size: 48px;
+}
+.player-btn:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.slideshow-container-audio{
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
 }
