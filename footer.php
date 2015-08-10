@@ -1,6 +1,6 @@
 <?php global $dm_settings; ?>
 <div class="footer row">
-    <div class="copyright-and-tribute col-md-4 no-padding">
+    <div class="copyright-and-tribute col-md-5 no-padding">
         <div class="copyright">
             <?php echo comicpress_copyright(); ?> <strong>Lwowski Klub Sportowy POGOŃ LWÓW</strong>
             <br>Wszelkie prawa zastrzeżone.</div>
@@ -11,7 +11,7 @@
             </div>
         </div>
     </div>
-    <div class="col-md-12 no-padding">
+    <div class="col-md-11 no-padding">
         <a href="<?php echo $dm_settings['vk'] ?>">
             <i class="icon-vkontakte social-icons vk"></i>
         </a>

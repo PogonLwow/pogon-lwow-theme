@@ -11,15 +11,23 @@ pogonlwow WordPress Theme, Copyright 2014 stsdc.
 /****************** Special Blank CSS classes for child themes to use without disturbing core bootstrap rules ****************/
 
 @import url(http://fonts.googleapis.com/css?family=Merriweather+Sans:300,700,400&subset=latin,latin-ext);
+.lang ul{
+    list-style: none;
+    float: right;
+}
+.lang ul li {
+    float: left;
+    padding: 3px;
+}
 .social {
     color: white;
     text-transform: uppercase;
     font-size: 12px;
-    padding-top: 70px;
     font-weight: bold;
     text-align: right;
     position: relative;
     display: table;
+    padding-top: 20px;
 }
 
 .social .watch-us {
@@ -471,7 +479,7 @@ a.comment-reply-link {
 .footer {
     color: #fff;
     font-size: 11px;
-    font-family: tahoma;
+    font-family: Tahoma,Verdana,Segoe,sans-serif;;
     display: block;
     margin: 0;
     padding: 20px 0 20px 0;

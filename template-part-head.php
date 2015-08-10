@@ -12,6 +12,7 @@
         </div>
         <?php endif; ?>
         <?php endif; ?>
+        <div class="col-md-5 lang"><ul><?php pll_the_languages(array('show_flags'=>1,'show_names'=>0));?></ul></div>
         <div class="social col-md-5"><div class="watch-us">Zobacz nas na:</div>
             <a href="<?php echo $dm_settings['vk'] ?>">
                 <i class="icon-vkontakte social-icons vk"></i>
