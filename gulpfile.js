@@ -36,14 +36,11 @@ var path = {
         js: [
             'src/js/*.js',
             // Różne pluginy
-            'bower_components/prism/prism.js',
-            'bower_components/Swipe/swipe.js',
             'bower_components/bLazy/blazy.js',
         ],
         style: [
             'src/style/*.scss',
             // Różne pluginy
-            'bower_components/prism/themes/prism-okaidia.css'
         ],
         img: 'src/img/**/*.*', // bierzemy wszystko, co jest w tych folderach
         font: 'src/font/*.*'
@@ -58,22 +55,24 @@ var path = {
 };
 
 // Żeby F5 nie męczyć //
-gulp.task('webserver', function() {
-    browserSync.init({
-        // Read here http://www.browsersync.io/docs/options/
-        proxy: '127.0.0.1/synergia/',
+gulp.task('webserver', function () {
+    browserSync({
+        logPrefix: 'Pogoń Lwów',
+        host:      'site1.domain.dev',
+        port:      3060,
+        open:      false,
+        notify:    false,
+        ghost:     false,
 
-        // port: 8080,
-
-        // Tunnel the Browsersync server through a random Public URL
-        tunnel: true,
-
-        // Attempt to use the URL "http://my-private-site.localtunnel.me"
-        // tunnel: "ppress",
-
-        // Inject CSS changes
-        injectChanges: true
-
+        // Change this property with files of your project
+        // that you want to refresh the page on changes.
+        files:     [
+            'public/css/**.min.css',
+            'public/js/**.min.js',
+            'app/**/*.php',
+            'index.php',
+            '.htaccess'
+        ]
     });
 });
 
@@ -86,9 +85,9 @@ var onError = function(err) {
 
 // Browser definitions for autoprefixer
 var AUTOPREFIXER_BROWSERS = [
-    '> 1%',
-    'ie >= 8',
-    'ios >= 7',
+    '> 3%',
+    'ie >= 10',
+    'ios >= 8',
     'android >= 4.4',
     'bb >= 10'
 ];

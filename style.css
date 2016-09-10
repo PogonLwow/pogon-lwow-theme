@@ -1,7 +1,7 @@
 /*
 Theme Name: PogonLwow
 Author: stsdc
-Author URI: http://vk.com.stsdc/
+Author URI: http://twitter.com.stsdc/
 Description: Motyw specjalnie przygotowany dla Pogoni Lwów.
 Version: 0.9.3
 Text Domain: pogonlwow
@@ -10,7 +10,6 @@ pogonlwow WordPress Theme, Copyright 2014 stsdc.
 /* The bootstrap.css file is auto-enqueued in functions.php */
 /****************** Special Blank CSS classes for child themes to use without disturbing core bootstrap rules ****************/
 
-@import url(http://fonts.googleapis.com/css?family=Merriweather+Sans:300,700,400&subset=latin,latin-ext);
 .lang ul{
     list-style: none;
     float: right;

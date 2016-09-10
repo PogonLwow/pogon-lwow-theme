@@ -36,7 +36,7 @@ include 'lib/general/removes.php';
 include 'lib/general/walker.php';
 include 'lib/general/humans.php';
 
-include 'lib/general/humans.php';
+// include 'lib/general/humans.php';
 
 
 // style //
@@ -44,7 +44,7 @@ include 'lib/general/humans.php';
     {
         global $version, $snrg_settings;
         $style_path = get_template_directory_uri().'/build/style';
-        wp_register_style('MerriweatherSans', 'https://fonts.googleapis.com/css?family=Merriweather+Sans:400,400italic,300,700&subset=latin,latin-ext');
+        wp_register_style('MerriweatherSans', 'https://fonts.googleapis.com/css?family=Merriweather+Sans:400,400italic,300,700,800&subset=latin,latin-ext');
         wp_register_style('main', $style_path.'/main.css', array(), $version, 'all');
         wp_enqueue_style('main');
         wp_enqueue_style('MerriweatherSans');

@@ -1,0 +1,51 @@
+.head {
+    @include clearfix;
+    padding: 10px;
+    display: flex;
+    width: $container-wide;
+    position: relative;
+    @include mq($from:tablet) {
+        background-color: transparent;
+        padding: 10px 0;
+        margin: 5px auto;
+    }
+}
+
+.logoContainer {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+
+    &__logo {
+        @include transition($bezier);
+        @include background-image( 'logo');
+        background-repeat: no-repeat;
+        display: block;
+        // width: 131px;
+        height: 140px;
+        z-index: 1;
+        @include mq($from:tablet) {
+            width: 131px;
+            height: 140px;
+        }
+    }
+
+    &__name {
+        color: #fff;
+        font-size: 40px;
+        font-weight: 800;
+        margin: 0 0 0 20px;
+        line-height: 135px;
+    }
+
+    &__desc {
+        text-transform: uppercase;
+        font-size: 9px;
+        font-weight: 700;
+        color: $white;
+        font-weight: 800;
+        left: 153px;
+        top: 88px;
+        position: absolute;
+    }
+}

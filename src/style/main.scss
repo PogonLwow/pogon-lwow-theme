@@ -1,0 +1,21 @@
+@import "vars";
+@import "mixins";
+@import "node_modules/sass-mq/_mq.scss";
+
+body {
+    background-image: url('../img/bg.png');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-color: #04022a;
+    font-family: $fontstack;
+    font-size: $font-size;
+    line-height: $line-height;
+}
+
+// PARTS
+
+@import "parts/head";
+
+// COMPONENTS
+
+@import "components/link";

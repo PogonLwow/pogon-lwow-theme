@@ -1,0 +1,99 @@
+.link {
+    // PODSTAWOWY //
+    color: $blue;
+    position: relative;
+    text-decoration: none;
+    @include transition($bezier);
+
+    &:hover {
+        color: $grey-light;
+        text-decoration: underline;
+        text-decoration: none;
+    }
+
+    &:focus {
+        outline: none;
+        outline: 5px auto -webkit-focus-ring-color;
+        outline-offset: -2px;
+    }
+    // MODYFIKATORY //
+    // --TOPBAR //
+    &--logo {
+        color: $white;
+        text-decoration: none;
+
+        &:hover {
+            color: $white;
+        }
+    }
+
+    &--nav {
+        display: block;
+        padding: 5px 10px;
+        text-decoration: none;
+
+        &:hover {
+            // color: #fff;
+        }
+    }
+
+    &--social {
+        color: $grey;
+
+        &:hover {
+            color: $grey-light;
+        }
+    }
+
+    &--tag {
+        @extend .link--social;
+    }
+
+    &--controls {
+        // color: $grey-light;
+        &:hover {
+            // color: $pogon-color-dark;
+        }
+    }
+    // --FOOTER //
+    &--footer {
+        color: #ffffff;
+        padding: 2px;
+        margin: 0 2px;
+        box-sizing: border-box;
+        position: relative;
+
+        &:before {
+            content: '';
+            border-bottom: solid 1px #fff;
+            position: absolute;
+            bottom: 5px;
+            left: 0;
+            height: 1px;
+            width: 100%;
+            opacity: 0;
+            @include transition($bezier);
+        }
+
+        &:hover {
+            color: #ffffff;
+
+            &:before {
+                opacity: 1;
+            }
+        }
+    }
+    // --TABY //
+    &--tab {
+        padding: 10px 15px;
+        color: $grey-light;
+        font-weight: 500;
+        text-transform: uppercase;
+        width: 100%;
+        text-align: center;
+
+        &:hover {
+            color: $grey;
+        }
+    }
+}

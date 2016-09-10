@@ -12,4 +12,6 @@
     <?php wp_head(); ?>
 </head>
 
-<body <?php body_class(); ?>>
+<script id="__bs_script__">//<![CDATA[
+    document.write("<script async src='http://HOST:3060/browser-sync/browser-sync-client.2.15.0.js'><\/script>".replace("HOST", location.hostname));
+//]]></script>
