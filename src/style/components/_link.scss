@@ -37,17 +37,6 @@
         }
     }
 
-    &--social {
-        color: $grey;
-
-        &:hover {
-            color: $grey-light;
-        }
-    }
-
-    &--tag {
-        @extend .link--social;
-    }
 
     &--controls {
         // color: $grey-light;

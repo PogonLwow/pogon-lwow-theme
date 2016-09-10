@@ -2,6 +2,8 @@
     @include clearfix;
     padding: 10px;
     display: flex;
+    flex-direction: row;
+    align-items: center;
     width: $container-wide;
     position: relative;
     @include mq($from:tablet) {
@@ -12,6 +14,7 @@
 }
 
 .logoContainer {
+    align-self: flex-start;
     position: relative;
     display: flex;
     flex-direction: row;

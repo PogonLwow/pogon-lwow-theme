@@ -10,15 +10,16 @@
             <span class="logoContainer__desc">Oficjalna strona klubu</span>
     </div>
 
-        <div class="social col-md-5"><div class="watch-us">Zobacz nas na:</div>
-            <a href="<?php echo $dm_settings['vk'] ?>">
-                <i class="icon-vkontakte social-icons vk"></i>
+        <div class="social">
+            <span class="social__followUs">Zobacz nas na:</span>
+            <a class="link" href="<?php echo $dm_settings['vk'] ?>">
+                <i class="icon-vkontakte social__icon social__icon--vk"></i>
             </a>
-            <a href="<?php echo $dm_settings['twitter'] ?>">
-                <i class="icon-twitter social-icons tw"></i>
+            <a class="link tw" href="<?php echo $dm_settings['twitter'] ?>">
+                <i class="icon-twitter social__icon social__icon--tw"></i>
             </a>
-            <a href="<?php echo $dm_settings['facebook'] ?>">
-                <i class="icon-facebook social-icons fb"></i>
+            <a class="link fb" href="<?php echo $dm_settings['facebook'] ?>">
+                <i class="icon-facebook social__icon social__icon--fb"></i>
             </a>
         </div>
 </div>

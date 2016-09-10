@@ -1,6 +1,7 @@
 @import "vars";
 @import "mixins";
 @import "node_modules/sass-mq/_mq.scss";
+@import "icons";
 
 body {
     background-image: url('../img/bg.png');
@@ -19,3 +20,4 @@ body {
 // COMPONENTS
 
 @import "components/link";
+@import "components/social";
