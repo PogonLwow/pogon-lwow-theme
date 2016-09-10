@@ -4,12 +4,13 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: $container-wide;
     position: relative;
-    @include mq($from:tablet) {
+    flex-wrap: nowrap;
+    @include mq($from:wide) {
         background-color: transparent;
-        padding: 10px 0;
-        margin: 5px auto;
+        padding: 0;
+        margin: 0 auto;
+        width: $container-wide;
     }
 }
 
@@ -21,34 +22,46 @@
 
     &__logo {
         @include transition($bezier);
-        @include background-image( 'logo');
+        @include background-image( 'logo-mobile');
         background-repeat: no-repeat;
         display: block;
-        // width: 131px;
-        height: 140px;
+        width: 64px;
+        height: 68px;
         z-index: 1;
         @include mq($from:tablet) {
+            @include background-image( 'logo');
             width: 131px;
             height: 140px;
         }
     }
 
     &__name {
-        color: #fff;
-        font-size: 40px;
-        font-weight: 800;
+        font-size: 24px;
+        font-weight: 700;
         margin: 0 0 0 20px;
-        line-height: 135px;
+        line-height: 68px;
+        @include mq($from:tablet) {
+            color: #fff;
+            font-size: 40px;
+            font-weight: 800;
+            margin: 0 0 0 20px;
+            line-height: 135px;
+            display: block;
+        }
     }
 
     &__desc {
-        text-transform: uppercase;
-        font-size: 9px;
-        font-weight: 700;
-        color: $white;
-        font-weight: 800;
-        left: 153px;
-        top: 88px;
-        position: absolute;
+        display: none;
+        @include mq($from:tablet) {
+            display: block;
+            text-transform: uppercase;
+            font-size: 9px;
+            font-weight: 700;
+            color: $white;
+            font-weight: 800;
+            left: 153px;
+            top: 88px;
+            position: absolute;
+        }
     }
 }

@@ -1,12 +1,18 @@
 .social {
     color: $white;
     margin-left: auto;
+
     &__followUs {
-        font-size: 12px;
-        font-weight: 800;
-        text-transform: uppercase;
-        line-height: 40px;
+        display: none;
+        @include mq($from:tablet) {
+            font-size: 12px;
+            font-weight: 800;
+            text-transform: uppercase;
+            line-height: 40px;
+            display: inline;
+        }
     }
+
     &__icon {
         position: relative;
         padding: 7px;
@@ -15,18 +21,21 @@
         float: right;
         color: $white;
         outline: solid 1px rgba(255, 255, 255, 0.3);
+
         &--fb {
             &:hover {
                 background-color: $color-fb;
                 outline: none;
             }
         }
+
         &--tw {
             &:hover {
                 background-color: $color-tw;
                 outline: none;
             }
         }
+
         &--vk {
             &:hover {
                 background-color: $color-vk;
