@@ -1,0 +1,23 @@
+.topbar {
+    background-color: $white;
+    display: flex;
+    flex-flow: row nowrap;
+    padding: 3px 10px;
+    align-items: center;
+
+    &__menu {
+        padding-left: 0;
+        list-style: none;
+        font-weight: 700;
+        text-transform: uppercase;
+        display: flex;
+        flex-flow: row nowrap;
+        font-size: 13px;
+
+        &--dropdown {
+            padding-left: 0;
+            list-style: none;
+            display: none;
+        }
+    }
+}

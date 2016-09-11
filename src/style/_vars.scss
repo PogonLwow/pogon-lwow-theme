@@ -5,7 +5,8 @@ $line-height: 1.4;
 
 //COLORS
 $grey:           #333333;                         // rgb(51, 51, 51)
-$grey-light:     lighten($grey, 10%);       // rgb(77, 77, 77)
+$grey-light:     lighten($grey, 30%);       // rgb(77, 77, 77)
+$grey-lighter:     lighten($grey, 70%);
 $blue: #04022a;
 $red: #c4151c;
 $gold: #e8c569;
@@ -59,7 +60,6 @@ $mq-breakpoints: (
 /**
 * Set up reusable colors
 */
-$secondary-color: #34495e;
 /**
 * Colors from Flat UI
 * Source: http://flatuicolors.com

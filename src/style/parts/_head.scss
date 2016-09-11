@@ -9,8 +9,6 @@
     @include mq($from:wide) {
         background-color: transparent;
         padding: 0;
-        margin: 0 auto;
-        width: $container-wide;
     }
 }
 

@@ -1,0 +1,42 @@
+.search {
+    border: 1px solid #cbcbcb;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: 10px;
+    border-radius: 15px 15px 15px 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-shadow: inset 0 1px 1px 0 #CCC;
+    z-index: 2;
+    display: flex;
+    flex-flow: row nowrap;
+    height: 30px;
+    box-sizing: border-box;
+
+    &__btn {
+        border: none;
+        background-color: transparent;
+        position: relative;
+        float: right;
+        width: 10%;
+        margin: 0;
+        padding: 0;
+        height: 26px;
+        vertical-align: middle;
+        color: $grey-light;
+        cursor: pointer;
+    }
+
+    &__box {
+        border: none;
+        color: $grey-light;
+        background-color: transparent;
+        height: auto;
+        position: relative;
+        float: left;
+        font-weight: lighter;
+        height: 26px;
+        font-weight: 400;
+
+    }
+}

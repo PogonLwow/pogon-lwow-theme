@@ -4,16 +4,16 @@
 
  <?php get_header(); ?>
 
-<?php get_template_part('template-part', 'head'); ?>
+ <?php get_template_part('parts/head'); ?>
 
-<?php get_template_part('template-part', 'topnav'); ?>
+<?php get_template_part('parts/topnav'); ?>
 <div class="wsp row"><a href="<?php echo $dm_settings['join'] ?>">Jak wesprzeć Pogoń Lwów ?</a></div>
 
 <div class="row">
 <!--slideshow, featured and sidebar -->
     <div class="col-md-10 dmbs-main">
 <?php if ( function_exists( 'wpsp_Slideshow' ) ) { wpsp_Slideshow('1,0,1,0'); } ?>
-<?php echo do_shortcode('[wpscp]'); ?>	
+<?php echo do_shortcode('[wpscp]'); ?>
     </div>
 
    <?php //get the right sidebar ?>

@@ -28,15 +28,25 @@
     }
 
     &--nav {
-        display: block;
-        padding: 5px 10px;
-        text-decoration: none;
+        color: $grey;
+        padding: 10px 15px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+
+        &:after {
+            content: '';
+            position: absolute;
+            top: 25%;
+            right: 0;
+            width: 1px;
+            height: 50%;
+            background: $grey-lighter;
+        }
 
         &:hover {
-            // color: #fff;
+            color: $gold;
         }
     }
-
 
     &--controls {
         // color: $grey-light;
@@ -70,19 +80,6 @@
             &:before {
                 opacity: 1;
             }
-        }
-    }
-    // --TABY //
-    &--tab {
-        padding: 10px 15px;
-        color: $grey-light;
-        font-weight: 500;
-        text-transform: uppercase;
-        width: 100%;
-        text-align: center;
-
-        &:hover {
-            color: $grey;
         }
     }
 }

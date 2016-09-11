@@ -13,11 +13,19 @@ body {
     line-height: $line-height;
 }
 
+.container {
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    @include mq($from:wide) {
+        margin: 0 auto;
+        margin-bottom: 10px;
+        width: $container-wide;
+    }
+}
 // PARTS
-
 @import "parts/head";
-
+@import "parts/topbar";
 // COMPONENTS
-
 @import "components/link";
 @import "components/social";
+@import "components/search";

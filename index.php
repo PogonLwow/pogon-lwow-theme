@@ -2,7 +2,7 @@
 
  <?php get_template_part('parts/head'); ?>
 
-<?php get_template_part('template-part', 'head'); ?>
+<?php get_template_part('parts/topbar'); ?>
 
 <?php get_template_part('template-part', 'topnav'); ?>
 
