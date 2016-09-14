@@ -4,8 +4,6 @@
 
 <?php get_template_part('parts/topbar'); ?>
 
-<?php get_template_part('template-part', 'topnav'); ?>
-
 <!-- start content container -->
 <div class="row dmbs-content">
 

@@ -3,7 +3,6 @@
     color: $blue;
     position: relative;
     text-decoration: none;
-    @include transition($bezier);
 
     &:hover {
         color: $grey-light;
@@ -29,20 +28,6 @@
 
     &--nav {
         color: $grey;
-        padding: 10px 15px;
-        margin-top: 15px;
-        margin-bottom: 15px;
-
-        &:after {
-            content: '';
-            position: absolute;
-            top: 25%;
-            right: 0;
-            width: 1px;
-            height: 50%;
-            background: $grey-lighter;
-        }
-
         &:hover {
             color: $gold;
         }

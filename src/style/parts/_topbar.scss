@@ -2,7 +2,7 @@
     background-color: $white;
     display: flex;
     flex-flow: row nowrap;
-    padding: 3px 10px;
+    padding: 1px 10px;
     align-items: center;
 
     &__menu {
@@ -13,11 +13,66 @@
         display: flex;
         flex-flow: row nowrap;
         font-size: 13px;
+        margin: 5px 0;
 
         &--dropdown {
-            padding-left: 0;
-            list-style: none;
-            display: none;
+            position: absolute;
+            content: "";
+            right: 0;
+            top: 50%;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 4px 4px 0 4px;
+            border-color: $grey transparent transparent transparent;
+        }
+    }
+
+    &__menuItem {
+        position: relative;
+        padding: 10px 15px;
+        text-align: center;
+
+        &:after {
+            content: '';
+            position: absolute;
+            top: 25%;
+            right: 0;
+            width: 1px;
+            height: 50%;
+            background: $grey-lighter;
+        }
+    }
+
+    &__menuParent {
+        &:hover .topbar__menuDropdown {
+            display: block;
+        }
+    }
+
+    &__menuDropdown {
+        display: none;
+        min-width: 150px;
+        padding: 10px 0;
+        position: absolute;
+        background-color: $white;
+        padding-left: 0;
+        list-style: none;
+        // Centering
+        margin-left: calc(-75px + (50% - 15px));
+
+        & > .topbar__menuItem {
+            padding: 5px 15px;
+
+            &:after {
+                content: '';
+                position: absolute;
+                top: 0;
+                right: 25%;
+                width: 50%;
+                height: 1px;
+                background: $grey-lighter;
+            }
         }
     }
 }

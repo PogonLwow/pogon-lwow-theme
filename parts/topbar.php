@@ -1,18 +1,16 @@
 
     <div class="container topbar">
         <nav class="topbar__navbar" role="navigation">
-
-                <?php
-                wp_nav_menu(array(
-                        'theme_location' => 'main_menu',
-                        'depth' => 2,
-                        'container' => '',
-                        'container_class' => '',
-                        'menu_class' => 'topbar__menu',
-                        'fallback_cb' => 'wp_bootstrap_navwalker::fallback',
-                        'walker' => new wp_bootstrap_navwalker(), )
-                );
-                ?>
+                <?php wp_nav_menu(array(
+                    'theme_location' => 'main_menu',
+                    'depth' => 2,
+                    'container' => '',
+                    'container_class' => '',
+                    'menu_class' => 'topbar__menu',
+                    'menu' => 'Main Menu',
+                    'container_id' => 'cssmenu',
+                    'walker' => new topbar_Menu_Walker(),
+)); ?>
         </nav>
     <div class="search">
         <form method="get" id="searchform" action="<?php bloginfo('home'); ?>/">
@@ -23,9 +21,5 @@
 
         </form>
     </div>
-
-
-
-
-
 </div>
+<script src="wp-content/themes/pogonlwow/build/js/main.min.js"></script>
