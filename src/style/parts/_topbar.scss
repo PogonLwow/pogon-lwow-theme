@@ -45,6 +45,7 @@
     }
 
     &__menuParent {
+        padding-right: 8px;
         &:hover .topbar__menuDropdown {
             display: block;
         }
