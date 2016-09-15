@@ -38,6 +38,7 @@
     "rimraf": "^2.4.4"
   },
   "dependencies": {
+    "blazy": "^1.6.2",
     "sass-mq": "^3.2.9"
   }
 }

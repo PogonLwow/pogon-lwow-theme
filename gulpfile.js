@@ -36,7 +36,7 @@ var path = {
         js: [
             'src/js/*.js',
             // Różne pluginy
-            'bower_components/bLazy/blazy.js',
+            'node_modules/blazy/blazy.js',
         ],
         style: [
             'src/style/*.scss',

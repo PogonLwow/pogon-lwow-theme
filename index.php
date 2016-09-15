@@ -4,24 +4,21 @@
 
 <?php get_template_part('parts/topbar'); ?>
 
-<!-- start content container -->
-<div class="row dmbs-content">
-
-<?php if (!is_single()): ?>
-    <div class="col-md-10 dmbs-main">
 <?php
-endif;
-                get_template_part('content');
+$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+$args = array(
+    'pagination' => true,
+    'posts_per_page' => '6',
+    'paged' => $paged,
+);
+$posts = new WP_Query($args);
 ?>
 
-   </div>
+                <?php card($posts); ?>
+            <button id="load_more_posts" class="btn btn--loadMore  btn--synergia">Zobacz starsze</div></button>
 
-   <?php //get the right sidebar
-    if (!is_single()):
-        get_sidebar('right');
-    endif; ?>
-
-</div>
-<!-- end content container -->
+<?php
+wp_reset_postdata();
+?>
 
 <?php get_footer(); ?>

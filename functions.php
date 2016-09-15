@@ -36,6 +36,8 @@ include 'lib/general/removes.php';
 include 'lib/general/navwalker.php';
 include 'lib/general/humans.php';
 
+include 'lib/card.php';
+
 // include 'lib/general/humans.php';
 
 
@@ -72,7 +74,7 @@ function js()
         wp_enqueue_script('map_settings');
     }
 }
-add_action('wp_header', 'js');
+add_action('wp_footer', 'js');
 // Dodajemy wsparcie linków RSS //
 add_theme_support('automatic-feed-links');
 
