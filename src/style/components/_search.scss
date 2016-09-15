@@ -1,30 +1,42 @@
 .search {
     border: 1px solid #cbcbcb;
     overflow: hidden;
-    margin-left: auto;
-    margin-right: 10px;
-    border-radius: 15px 15px 15px 15px;
+    border-radius: 30px;
     padding-left: 10px;
     padding-right: 10px;
     box-shadow: inset 0 1px 1px 0 #CCC;
     z-index: 2;
     display: flex;
     flex-flow: row nowrap;
-    height: 30px;
     box-sizing: border-box;
+    margin-bottom: 10px;
+    width: 80%;
+    height: 60px;
+    @include mq($from:desktop) {
+        margin-left: auto;
+        margin-right: 10px;
+        margin-bottom: 0;
+        width: auto;
+        height: 30px;
+        border-radius: 15px;
+    }
 
     &__btn {
         border: none;
         background-color: transparent;
         position: relative;
-        float: right;
         width: 10%;
         margin: 0;
+        margin-left: auto;
         padding: 0;
         height: 26px;
         vertical-align: middle;
         color: $grey-light;
         cursor: pointer;
+        font-size: 20px;
+        @include mq($from:desktop) {
+            font-size: inherit;
+        }
     }
 
     &__box {
@@ -35,8 +47,23 @@
         position: relative;
         float: left;
         font-weight: lighter;
-        height: 26px;
         font-weight: 400;
+        font-size: 30px;
+        margin-left: 20px;
+        @include mq($from:desktop) {
+            height: 26px;
+            font-size: inherit;
+            margin-left: 0px;
 
+        }
     }
+}
+// bad, bad things...
+
+#searchform {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    width: 100%;
+    justify-content: center;
 }

@@ -1,30 +1,37 @@
 .topbar {
     background-color: $white;
-    display: flex;
-    flex-flow: row nowrap;
+    flex-flow: column nowrap;
     padding: 1px 10px;
     align-items: center;
+    display: none;
+    @include mq($from:desktop) {
+        background-color: $white;
+        display: flex;
+        flex-flow: row nowrap;
+        padding: 1px 10px;
+        align-items: center;
+    }
+
+    &--expanded {
+        display: flex;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        left: 0;
+    }
 
     &__menu {
-        padding-left: 0;
-        list-style: none;
         font-weight: 700;
         text-transform: uppercase;
         display: flex;
-        flex-flow: row nowrap;
-        font-size: 13px;
-        margin: 5px 0;
-
-        &--dropdown {
-            position: absolute;
-            content: "";
-            right: 0;
-            top: 50%;
-            width: 0;
-            height: 0;
-            border-style: solid;
-            border-width: 4px 4px 0 4px;
-            border-color: $grey transparent transparent transparent;
+        list-style: none;
+        flex-flow: column nowrap;
+        @include mq($from:desktop) {
+            padding-left: 0;
+            flex-flow: row nowrap;
+            font-size: 13px;
+            margin: 5px 0;
         }
     }
 
@@ -33,37 +40,92 @@
         padding: 10px 15px;
         text-align: center;
 
-        &:after {
+        &:last-child {
+            &:after {
+                content: '';
+                position: absolute;
+                top: 25%;
+                right: 0;
+                width: 1px;
+                height: 50%;
+                background: transparent;
+            }
+        }
+
+        &:first-child {
+            &:before {
+                content: '';
+                position: absolute;
+                top: 25%;
+                right: 0;
+                width: 1px;
+                height: 50%;
+                background: transparent;
+            }
+        }
+
+        &:before {
             content: '';
             position: absolute;
-            top: 25%;
-            right: 0;
-            width: 1px;
-            height: 50%;
+            top: 0;
+            right: 25%;
+            width: 50%;
+            height: 1px;
             background: $grey-lighter;
+        }
+        @include mq($from:desktop) {
+            &:after {
+                content: '';
+                position: absolute;
+                top: 25%;
+                right: 0;
+                width: 1px;
+                height: 50%;
+                background: $grey-lighter;
+            }
+
+            &:before {
+                content: '';
+                position: absolute;
+                top: 0;
+                right: 25%;
+                width: 50%;
+                height: 1px;
+                background: transparent;
+            }
         }
     }
 
     &__menuParent {
         padding-right: 8px;
+
         &:hover .topbar__menuDropdown {
             display: block;
         }
     }
 
     &__menuDropdown {
-        display: none;
-        min-width: 150px;
-        padding: 10px 0;
-        position: absolute;
-        background-color: $white;
+        display: block;
         padding-left: 0;
         list-style: none;
-        // Centering
-        margin-left: calc(-75px + (50% - 15px));
+        margin-top: 10px;
+        margin-bottom: -10px;
+        margin-left: 20px;
+        @include mq($from:desktop) {
+            display: none;
+            min-width: 150px;
+            margin-top: 0;
+            padding: 10px 0;
+            position: absolute;
+            background-color: $white;
+            // Centering
+            margin-left: calc(-75px + (50% - 15px));
+        }
 
         & > .topbar__menuItem {
-            padding: 5px 15px;
+            @include mq($from:desktop) {
+                padding: 10px 15px;
+            }
 
             &:after {
                 content: '';
@@ -74,6 +136,17 @@
                 height: 1px;
                 background: $grey-lighter;
             }
+        }
+    }
+
+    &__trigger {
+        display: inline-block;
+        margin-left: auto;
+        z-index: 2;
+        height: 70px;
+        right: 10px;
+        @include mq($from:desktop) {
+            display: none;
         }
     }
 }

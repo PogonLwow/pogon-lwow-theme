@@ -1,6 +1,10 @@
 .social {
-    color: $white;
-    margin-left: auto;
+    display: none;
+    @include mq($from:desktop) {
+        display: block;
+        color: $white;
+        margin-left: auto;
+    }
 
     &__followUs {
         display: none;

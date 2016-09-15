@@ -1,0 +1,62 @@
+// Change to watch in slow motion
+// http://codepen.io/bennettfeely/pen/twbyA
+.navicon-button {
+  display: inline-block;
+  position: relative;
+  padding: 2.0625rem 0.625rem;
+  @include transition($bezier);
+  cursor: pointer;
+  user-select: none;
+  .navicon:before,
+  .navicon:after {
+    @include transition($bezier);
+  }
+}
+.navicon {
+  position: relative;
+  width: 32px;
+  height: 0.2rem;
+  background: $white;
+  @include transition($bezier);
+  border-radius: 0.2rem;
+  &:before,
+  &:after {
+    display: block;
+    content: "";
+    height: 0.2rem;
+    width: 32px;
+    background: $white;
+    position: absolute;
+    z-index: -1;
+    @include transition($bezier);
+    border-radius: 0.2rem;
+  }
+  &:before {
+    top: 0.625rem;
+  }
+  &:after {
+    top: -.625rem;
+  }
+}
+.open:not(.steps) .navicon:before,
+.open:not(.steps) .navicon:after {
+  top: 0 !important;
+}
+.open .navicon:before,
+.open .navicon:after {
+  @include transition($bezier);
+  background-color: $grey;
+
+}
+/* × and + */
+.open.x {
+  .navicon {
+    background: transparent;
+    &:before {
+      transform: rotate(-45deg);
+    }
+    &:after {
+      transform: rotate(45deg);
+    }
+  }
+}
