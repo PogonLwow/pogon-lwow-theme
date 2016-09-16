@@ -10,6 +10,17 @@
         background-color: transparent;
         padding: 0;
     }
+    &__trigger {
+        display: inline-block;
+        margin-left: auto;
+        z-index: 2;
+        height: 70px;
+        right: 10px;
+        z-index: 5;
+        @include mq($from:desktop) {
+            display: none;
+        }
+    }
 }
 
 .logoContainer {
@@ -25,7 +36,7 @@
         display: block;
         width: 64px;
         height: 68px;
-        z-index: 1;
+        z-index: 5;
         @include mq($from:tablet) {
             @include background-image( 'logo');
             width: 131px;

@@ -1,3 +1,4 @@
+
 var bLazy = new Blazy({
   offset: 20,
   selector: '.blazy',

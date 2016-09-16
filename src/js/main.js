@@ -1,7 +1,12 @@
-(function() {
-    'use strict';
-    //= parts/trigger.js
-    //= parts/lazy.js
+jQuery(function($) {
+
     //= parts/excerpt.js
 
-})();
+    $(document).ready(function() {
+
+        //= parts/trigger.js
+
+        //= parts/lazy.js
+
+    });
+});

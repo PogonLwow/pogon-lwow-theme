@@ -9,7 +9,7 @@
         </a>
             <span class="logoContainer__desc">Oficjalna strona klubu</span>
     </div>
-    <div id="nav-trigger" class="topbar__trigger">
+    <div id="nav-trigger" class="head__trigger">
         <div class="navicon-button x">
             <div class="navicon"></div>
         </div>

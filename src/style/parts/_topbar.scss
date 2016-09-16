@@ -141,14 +141,4 @@
         }
     }
 
-    &__trigger {
-        display: inline-block;
-        margin-left: auto;
-        z-index: 2;
-        height: 70px;
-        right: 10px;
-        @include mq($from:desktop) {
-            display: none;
-        }
-    }
 }

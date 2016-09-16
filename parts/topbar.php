@@ -21,4 +21,3 @@
         </form>
     </div>
 </div>
-<script src="wp-content/themes/pogonlwow/build/js/main.min.js"></script>
