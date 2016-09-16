@@ -7,6 +7,7 @@ function card($query)
         <div class="card">
           <a title="<?php the_title(); ?>" href="<?php the_permalink(); ?>">
             <div class="card__overimage loading">
+                <time class="card__time"><?php echo get_the_time('j F Y'); ?></time>
               <?php if (has_post_thumbnail()) {
                 ?>
                 <img class="card__image blazy"
