@@ -16,18 +16,27 @@ body {
 .container {
     box-sizing: border-box;
     margin-bottom: 10px;
+    flex-flow: row wrap;
+    display: flex;
+    justify-content: center;
     @include mq($from:wide) {
         margin: 0 auto;
         margin-bottom: 10px;
         width: $container-wide;
+        flex-flow: row wrap;
+        justify-content: flex-start;
+
     }
 }
 // PARTS
 @import "parts/head";
 @import "parts/topbar";
 
+// I have no idea why I have separeted them :C
+
 // COMPONENTS
 @import "components/link";
 @import "components/social";
 @import "components/search";
 @import "components/burger";
+@import "components/card";

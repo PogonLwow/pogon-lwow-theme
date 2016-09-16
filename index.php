@@ -13,9 +13,10 @@ $args = array(
 );
 $posts = new WP_Query($args);
 ?>
-
-                <?php card($posts); ?>
-            <button id="load_more_posts" class="btn btn--loadMore  btn--synergia">Zobacz starsze</div></button>
+<div class="container">
+    <?php card($posts); ?>
+    <button id="load_more_posts" class="btn btn--loadMore  btn--synergia">Zobacz starsze</div></button>
+</div>
 
 <?php
 wp_reset_postdata();
