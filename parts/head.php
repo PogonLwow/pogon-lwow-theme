@@ -1,5 +1,5 @@
 <?php global $dm_settings; ?>
-<body <?php body_class(); ?>>
+<body <?php body_class(); ?> data-ajax-url="<?php echo admin_url('admin-ajax.php'); ?>">
 
 <div class="container head">
     <div class="logoContainer">

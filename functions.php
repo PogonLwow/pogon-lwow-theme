@@ -37,7 +37,9 @@ include 'lib/general/topwalker.php';
 include 'lib/general/footerwalker.php';
 include 'lib/general/humans.php';
 
-include 'lib/card.php';
+include 'lib/posts/ajax.php';
+include 'lib/posts/card.php';
+
 
 // include 'lib/general/humans.php';
 

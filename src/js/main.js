@@ -8,5 +8,7 @@ jQuery(function($) {
 
         //= parts/lazy.js
 
+        //= parts/load-more.js
+
     });
 });
