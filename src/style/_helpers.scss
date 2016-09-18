@@ -29,3 +29,11 @@
 .noMargins {
     margin: 0;
 }
+.flex-right {
+    margin-left: auto;
+}
+.flex {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+}

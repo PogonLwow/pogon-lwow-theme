@@ -1,0 +1,142 @@
+.footernav {
+    flex-flow: column nowrap;
+    padding: 1px 10px;
+    align-items: center;
+    display: none;
+    z-index: 4;
+    @include mq($from:desktop) {
+        display: flex;
+        flex-flow: row nowrap;
+        padding: 1px 10px;
+        align-items: center;
+    }
+
+    &--expanded {
+        display: flex;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        left: 0;
+    }
+
+    &__menu {
+        display: flex;
+        list-style: none;
+        flex-flow: column nowrap;
+        @include mq($from:desktop) {
+            padding-left: 0;
+            flex-flow: row nowrap;
+            font-size: 11px;
+            margin: 5px 0;
+        }
+    }
+
+    &__menuItem {
+        position: relative;
+        padding: 0 10px;
+        text-align: center;
+
+        &:last-child {
+            &:after {
+                content: '';
+                position: absolute;
+                top: 25%;
+                right: 0;
+                width: 1px;
+                height: 50%;
+                background: transparent;
+            }
+        }
+
+        &:first-child {
+            &:before {
+                content: '';
+                position: absolute;
+                top: 25%;
+                right: 0;
+                width: 1px;
+                height: 50%;
+                background: transparent;
+            }
+        }
+
+        &:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 25%;
+            width: 50%;
+            height: 1px;
+            background: $trans-dark;
+        }
+        @include mq($from:desktop) {
+            &:after {
+                content: '';
+                position: absolute;
+                top: 25%;
+                right: 0;
+                width: 1px;
+                height: 50%;
+                background: $trans-dark;
+            }
+
+            &:before {
+                content: '';
+                position: absolute;
+                top: 0;
+                right: 25%;
+                width: 50%;
+                height: 1px;
+                background: transparent;
+            }
+        }
+    }
+
+    &__menuParent {
+        padding-right: 8px;
+
+        &:hover .footernav__menuDropdown {
+            display: block;
+        }
+    }
+
+    &__menuDropdown {
+        z-index: 5;
+        display: block;
+        padding-left: 0;
+        list-style: none;
+        margin-top: -10px;
+        margin-bottom: 10px;
+        margin-left: 20px;
+        bottom: calc(100% - 10px);
+        border: $border-lite;
+        @include mq($from:desktop) {
+            display: none;
+            min-width: 90px;
+            margin-top: 0;
+            padding: 10px 0;
+            position: absolute;
+            background-color: $blue;
+            // Centering
+            margin-left: calc(-45px + (50% - 15px));
+        }
+
+        & > .footernav__menuItem {
+            @include mq($from:desktop) {
+                padding: 10px 15px;
+            }
+
+            &:after {
+                content: '';
+                position: absolute;
+                top: 0;
+                right: 25%;
+                width: 50%;
+                height: 1px;
+                background: transparent;
+            }
+        }
+    }
+
+}

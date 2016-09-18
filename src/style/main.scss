@@ -8,7 +8,7 @@ body {
     background-repeat: no-repeat;
     background-position: top;
     background-color: #04022a;
-    font-family: $fontstack;
+    font-family: $font;
     font-size: $font-size;
     line-height: $line-height;
 }
@@ -31,6 +31,7 @@ body {
 // PARTS
 @import "parts/head";
 @import "parts/topbar";
+@import "parts/footer";
 
 // I have no idea why I have separeted them :C
 
@@ -40,3 +41,6 @@ body {
 @import "components/search";
 @import "components/burger";
 @import "components/card";
+@import "components/footernav";
+
+@import "helpers";

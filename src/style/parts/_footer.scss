@@ -1,0 +1,52 @@
+.footer {
+    color: $white;
+    display: flex;
+    flex-flow: row;
+    padding: 20px 0;
+    font-size: 11px;
+    text-align: center;
+    font-family: $font;
+    @include mq($from:desktop) {
+        text-align: left;
+        align-items: center;
+    }
+
+    &__ct {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: center;
+        @include mq($from:desktop) {
+            align-items: flex-start;
+            justify-content:  flex-start;
+        }
+    }
+
+    &__ns {
+        display: none;
+        @include mq($from:desktop) {
+            display: flex;
+            flex-flow: row nowrap;
+            margin-left: auto;
+        }
+    }
+}
+
+.tribute {
+    padding: 5px 0;
+    display: flex;
+    flex-flow: row nowrap;
+
+    &__design {
+        margin: 0;
+        border-right: $border-lite;
+        padding-right: 5px;
+        float: left;
+    }
+
+    &__code {
+        float: left;
+        padding-right: 5px;
+        margin-left: 5px;
+    }
+}
