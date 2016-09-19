@@ -20,21 +20,21 @@ body {
     display: flex;
     justify-content: center;
     @include mq($from:wide) {
-        margin: 0 auto;
-        margin-bottom: 10px;
+        margin: 0 auto 10px;
         width: $container-wide;
         flex-flow: row wrap;
         justify-content: flex-start;
+    }
 
+    &--cards {
+        width: 100%;
     }
 }
 // PARTS
 @import "parts/head";
 @import "parts/topbar";
 @import "parts/footer";
-
 // I have no idea why I have separeted them :C
-
 // COMPONENTS
 @import "components/link";
 @import "components/social";
@@ -42,5 +42,5 @@ body {
 @import "components/burger";
 @import "components/card";
 @import "components/footernav";
-
+@import "components/button";
 @import "helpers";

@@ -1,0 +1,26 @@
+.load-more-container {
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    justify-content: center;
+    @include mq($from:wide) {
+        width: 750px;
+        margin: 10px 0 10px;
+    }
+}
+
+.btn {
+    border: $border-lite;
+    padding: 10px;
+    background-color: $blue;
+    color: $white;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+
+    &:hover {
+        background-color: $gold;
+        color: $white;
+    }
+}

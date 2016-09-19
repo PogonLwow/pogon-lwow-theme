@@ -7,10 +7,15 @@ $args = array(
 );
 $posts = new WP_Query($args);
 ?>
-<div class="container" id="feed">
-    <?php card($posts); ?>
-    <button id="load_more_posts" class="btn btn--loadMore  btn--synergia">Zobacz starsze</div></button>
+<div class="container">
+    <div class="container--cards container" id="feed">
+            <?php card($posts); ?>
+    </div>
+    <div class="load-more-container">
+        <button id="load_more_posts" class="btn btn--loadMore  btn--synergia">Zobacz starsze</button>
 </div>
+</div>
+
 
 <?php
 wp_reset_postdata();

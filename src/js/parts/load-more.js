@@ -27,7 +27,7 @@
     var loadingButton = (function(button){
         return {
             showSpinner: function(button) {
-                button.html('<div class="spinner"></div>');
+                button.html('Ładuję starsze...');
             },
             showCaption: function(button) {
                 button.html('Zobacz starsze');
@@ -42,7 +42,7 @@
 
     function loadMore() {
         console.log('Clicked load_more');
-        $(this).html('<div class="spinner"></div>');
+        $(this).html('Ładuję...');
         post_offset = parseInt(post_offset) + 6;
         $.ajax({
             url: ajax_url,
