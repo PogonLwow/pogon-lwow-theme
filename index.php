@@ -6,5 +6,6 @@
 
 <?php get_template_part('parts/feed'); ?>
 
+<?php get_template_part('parts/sponsors'); ?>
 
 <?php get_footer(); ?>

@@ -5,7 +5,7 @@
     width: 100%;
     justify-content: center;
     @include mq($from:wide) {
-        width: 750px;
+        width: $main;
         margin: 10px 0 10px;
     }
 }

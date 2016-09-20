@@ -14,10 +14,15 @@ $lh: 1.5em;
     margin: 20px 20px 20px;
     @include mq($from:desktop) {
         flex-flow: row nowrap;
-        width: 750px;
+        width: $main;
         height: 180px;
         margin: 10px 0 10px;
-
+    }
+    &:first-child {
+        margin-top: 0;
+    }
+    &:last-child {
+        margin-bottom: 0;
     }
 
     &:hover .card__title {

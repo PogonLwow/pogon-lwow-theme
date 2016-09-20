@@ -40,6 +40,9 @@ include 'lib/general/humans.php';
 include 'lib/posts/ajax.php';
 include 'lib/posts/card.php';
 
+include 'lib/sponsors/utils.php';
+include 'lib/sponsors/post-type.php';
+
 
 // include 'lib/general/humans.php';
 

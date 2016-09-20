@@ -23,6 +23,11 @@ $shadow-none: 0 0 0 0 rgba(0,0,0,0);
 $container-wide: 1200px;
 $container-desktop: 930px;
 $container-tablet: 750px;
+
+$gutter: 20px;
+$main: 730px;
+$side: $container-wide - $main - $gutter;
+
 //BUTTON
 // http://codepen.io/jreece/pen/myeJBN
 $bezier: cubic-bezier(0.455, 0.03, 0.515, 0.955);

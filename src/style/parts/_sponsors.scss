@@ -1,0 +1,29 @@
+.sponsors {
+    display: flex;
+    flex-flow: row;
+    margin-top: 15px;
+    justify-content: space-around;
+}
+.brand {
+    position: relative;
+    width: 180px;
+    height: 150px;
+    margin: 10px;
+    text-align: center;
+    cursor: pointer;
+    transform-style: preserve-3d;
+
+    &__logo {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        opacity: 1;
+        filter:alpha(opacity=100); // For IE8 and earlier
+        filter:grayscale(0.4);
+        width: auto;
+        max-height: 150px;
+        max-width: 170px;
+        @include transition($bezier);
+        image-rendering: -moz-optimizeSpeed;
+    }
+}
