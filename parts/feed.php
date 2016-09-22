@@ -7,14 +7,14 @@ $args = array(
 );
 $posts = new WP_Query($args);
 ?>
-<div class="container">
+<section class="section section--main">
     <div class="container--cards container" id="feed">
             <?php card($posts); ?>
     </div>
     <div class="load-more-container">
         <button id="load_more_posts" class="btn btn--loadMore  btn--synergia">Zobacz starsze</button>
-</div>
-</div>
+    </div>
+</section>
 
 
 <?php

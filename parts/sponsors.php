@@ -3,16 +3,32 @@
 
 // Najpierw wskazujemy z jakimi argumentami chcemy pozyskać wpisy
 $sponsors_args = array(
-    'post_type' => 'sponsorowane ',
-    'category_name' => 'wsparcie',
-);
+    'post_type' => 'sponsorowane',
+    'meta_query' => array(
+        array(
+            'key' => '_sponsor_pos',
+            'value' => 'sponsors',
+            // 'compare' => 'LIKE',
+        ),
+    ),);
 $collab_args = array(
-    'post_type' => 'sponsorowane ',
-    'category_name' => 'współpraca',
-);
+    'post_type' => 'sponsorowane',
+    'meta_query' => array(
+        array(
+            'key' => '_sponsor_pos',
+            'value' => 'collab',
+            // 'compare' => 'LIKE',
+        ),
+    ),);
 $partnerships_args = array(
-    'post_type' => 'sponsorowane ',
-    'category_name' => 'partnerzy',
+    'post_type' => 'sponsorowane',
+    'meta_query' => array(
+        array(
+            'key' => '_sponsor_pos',
+            'value' => 'partnerships',
+            // 'compare' => 'LIKE',
+        ),
+    ),
 );
 // Tu pobieramy do zmiennych z bazy te wszystkie wpisy
 $partnerships = new WP_Query($partnerships_args);
@@ -34,6 +50,7 @@ function show_links($items)
               </a>
           </div>
 <?php
+
         }
     } else {
         echo 'Nic a nic';
@@ -42,7 +59,7 @@ function show_links($items)
 
 // Następnie wywołujemy tę funkcję w HTMLu
 ?>
-    <section class="section section--red-deco container">
+    <section class="section section--white section--red-deco container">
         <h4 class="section__title">Wspierają nas</h4>
         <div class="sponsors">
             <?php show_links($sponsors); ?>
@@ -50,13 +67,13 @@ function show_links($items)
     </section>
 
     <div class="container">
-        <section class="section section--red-deco section--main">
+        <section class="section section--white section--red-deco section--main">
             <h4 class="section__title">Kluby partnerskie</h4>
             <div class="sponsors">
                 <?php show_links($partnerships); ?>
             </div>
         </section>
-            <section class="section section--red-deco section--side">
+            <section class="section section--white section--red-deco section--side">
                 <h4 class="section__title">Współpraca</h4>
                 <div class="sponsors">
                     <?php show_links($collabs); ?>

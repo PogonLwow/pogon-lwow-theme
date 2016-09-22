@@ -1,11 +1,14 @@
 .section {
     display: flex;
     flex-flow: column nowrap;
-    background-color: $white;
-    padding: 20px;
     color: $grey;
     position: relative;
     box-sizing: border-box;
+
+    &--white {
+        background-color: $white;
+        padding: 20px;
+    }
 
     &--main {
         width: 100%;

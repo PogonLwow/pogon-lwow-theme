@@ -4,7 +4,10 @@
 
 <?php get_template_part('parts/topbar'); ?>
 
-<?php get_template_part('parts/feed'); ?>
+    <div class="container">
+        <?php get_template_part('parts/feed'); ?>
+
+    </div>
 
 <?php get_template_part('parts/sponsors'); ?>
 
