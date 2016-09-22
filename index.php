@@ -6,6 +6,7 @@
 
     <div class="container">
         <?php get_template_part('parts/feed'); ?>
+        <?php get_template_part('parts/sidebar'); ?>
 
     </div>
 
