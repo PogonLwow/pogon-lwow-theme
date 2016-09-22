@@ -18,35 +18,4 @@
             display: inline;
         }
     }
-
-    &__icon {
-        position: relative;
-        padding: 7px;
-        font-size: 19px;
-        margin-left: 10px;
-        float: right;
-        color: $white;
-        outline: solid 1px rgba(255, 255, 255, 0.3);
-
-        &--fb {
-            &:hover {
-                background-color: $color-fb;
-                outline: none;
-            }
-        }
-
-        &--tw {
-            &:hover {
-                background-color: $color-tw;
-                outline: none;
-            }
-        }
-
-        &--vk {
-            &:hover {
-                background-color: $color-vk;
-                outline: none;
-            }
-        }
-    }
 }
