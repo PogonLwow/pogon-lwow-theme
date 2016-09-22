@@ -1,9 +1,9 @@
 <?php/** * Template Name: Kontakt * */ ?>
- <?php get_header(); ?>
+<?php get_header(); ?>
 
-<?php get_template_part('template-part', 'head'); ?>
+<?php get_template_part('parts/head'); ?>
 
-<?php get_template_part('template-part', 'topnav'); ?>
+<?php get_template_part('parts/topbar'); ?>
 
 <div id="primary" class="row">
 		<div id="content" role="main">
@@ -12,7 +12,7 @@
         if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
             <h2 class="page-header"><?php the_title() ;?></h2>
-            <?php echo do_shortcode('[vsgmap address="Lwów, ul. Kuchera 20/2" width="100%"]'); ?>	
+            <?php echo do_shortcode('[vsgmap address="Lwów, ul. Kuchera 20/2" width="100%"]'); ?>
 
             <div class="text"><?php the_content(); ?></div>
             <?php wp_link_pages(); ?>
