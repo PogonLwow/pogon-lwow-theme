@@ -1,9 +1,7 @@
 <?php global $dm_settings; ?>
-<div class="col-md-6 dmbs-right">
-    <?php
-//get the right sidebar
-dynamic_sidebar( 'Right Sidebar' ); ?>
-    <div class="half">
+<section class="section section--side">
+    <?php dynamic_sidebar( 'Right Sidebar' ); ?>
+    <!-- <div class="half">
         <div class="position">
             <h3>Pozycja</h3>
 
@@ -27,6 +25,6 @@ dynamic_sidebar( 'Right Sidebar' ); ?>
             </a>
         </div>
     </div>
-    <div style="clear:both;"></div>
+    <div style="clear:both;"></div> -->
 
-</div>
+</section>

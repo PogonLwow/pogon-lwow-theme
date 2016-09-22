@@ -1,0 +1,70 @@
+.widget_sp_event_blocks {
+    @extend .section;
+    @extend .section--white;
+    // @extend .section--side;
+    @include deco($gold);
+    margin-bottom: 20px;
+
+    & table {
+        // display: block;
+        width: 100%;
+        // justify-content: space-around;
+    }
+}
+
+.widget_sp_event_blocks > h3 {
+    @extend .section__title;
+}
+
+.team-logo {
+    width: 82px;
+    height: auto;
+    margin: 10px;
+
+    & > img {
+        max-width: 100%;
+        max-height: 100%;
+        width: auto;
+        height: auto;
+    }
+}
+
+.sp-event-blocks .logo-even {
+    float: right;
+}
+
+.sp-event-blocks .logo-odd {
+    float: left;
+}
+
+.sp-event-date {
+    text-align: center;
+    display: block;
+    margin: 10px 0;
+    clear: none;
+    font-size: 14px;
+
+    & > a {
+        @extend .link;
+    }
+}
+
+.sp-event-results {
+    text-align: center;
+    display: block;
+    margin: 10px 0;
+    clear: none;
+    font-size: 14px;
+    & > a {
+        @extend .link;
+    }
+}
+.sp-event-title {
+    text-align: center;
+    display: block;
+    margin: 10px 0;
+    clear: none;
+    & > a {
+        @extend .link;
+    }
+}

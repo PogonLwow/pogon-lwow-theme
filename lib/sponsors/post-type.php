@@ -2,9 +2,9 @@
 function sponsorowane() {
 
 	$labels = array(
-		'name'                => _x( 'Sponsorzy i współpracy', 'Post Type General Name', 'text_domain' ),
+		'name'                => _x( 'Sponsorzy i współprace', 'Post Type General Name', 'text_domain' ),
 		'singular_name'       => _x( 'Sponsor i współpraca', 'Post Type Singular Name', 'text_domain' ),
-		'menu_name'           => __( 'Sponsorzy i współpracy', 'text_domain' ),
+		'menu_name'           => __( 'Sponsorzy i współprace', 'text_domain' ),
 		'parent_item_colon'   => __( 'Parent Item:', 'text_domain' ),
 		'all_items'           => __( 'Wszystkie', 'text_domain' ),
 		'view_item'           => __( 'Zobacz sponsora lub współpracę', 'text_domain' ),
