@@ -39,6 +39,7 @@
   },
   "dependencies": {
     "blazy": "^1.6.2",
+    "lory.js": "^2.2.0",
     "sass-mq": "^3.2.9"
   }
 }

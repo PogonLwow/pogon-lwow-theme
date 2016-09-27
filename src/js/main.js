@@ -12,3 +12,6 @@ jQuery(function($) {
 
     });
 });
+
+//= ../../node_modules/lory.js/dist/lory.js
+//= parts/slider.js

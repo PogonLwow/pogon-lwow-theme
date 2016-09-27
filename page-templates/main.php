@@ -6,14 +6,13 @@
 
  <?php get_template_part('parts/head'); ?>
 
-<?php get_template_part('parts/topnav'); ?>
+<?php get_template_part('parts/topbar'); ?>
 
 
 
 
 <div class="container">
-    <?php if ( function_exists( 'wpsp_Slideshow' ) ) { wpsp_Slideshow('1,0,1,0'); } ?>
-    <?php echo do_shortcode('[wpscp]'); ?>
+    <?php get_template_part('parts/slideshow'); ?>
     <?php get_template_part('parts/sidebar'); ?>
 
 </div>
