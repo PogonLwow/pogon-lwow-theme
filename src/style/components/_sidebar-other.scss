@@ -1,0 +1,33 @@
+.sblockContainer {
+    display: flex;
+    justify-content: space-between;
+}
+.sblock {
+    height: 225px;
+    background-color: $white;
+    width: calc(50% - 5px);
+    padding: 20px;
+    box-sizing: border-box;
+    &__title {
+        @extend .section__title;
+    }
+    &__pos{
+        font-size: 50px;
+        font-weight: bold;
+        text-align: center;
+    }
+    &__posLabel {
+        text-align: center;
+        display: block;
+    }
+    &__table {
+        padding: 5px;
+        border: 1px solid $grey-lighter;
+        margin: auto;
+        margin-top: 40px;
+        text-align: center;
+    }
+    &--shop {
+        background-image: url('../../build/img/sklep3.png');
+    }
+}
