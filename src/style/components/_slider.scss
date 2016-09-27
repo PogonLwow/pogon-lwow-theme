@@ -1,6 +1,11 @@
 .slider {
     height: 460px;
     cursor: grab;
+    width: 420px;
+    @include mq($from:desktop) {
+        width: 730px;
+
+}
 
     &__frame {
         position: relative;
@@ -63,9 +68,12 @@
     &__data {
         bottom: 0;
         left: 0;
-        height: 160px;
+        min-height: 160px;
         position: absolute;
-        width: 730px;
+        @include mq($from:desktop) {
+            width: 730px;
+}
+        width: 420px;
         padding: 0;
         background-color: rgba(0, 0, 0, 0.7);
         overflow: hidden;
@@ -83,7 +91,7 @@
     }
 
     &__title {
-        width: 660px;
+        width: 370px;
         padding: 10px 10px 5px 20px;
         margin: 0;
         line-height: 32px;
@@ -93,8 +101,11 @@
         /* css-3 */
         word-wrap: break-word;
         /* Internet Explorer 5.5+ */
-        word-break: break-all;
+        word-break: keep-all;
         white-space: normal;
         box-sizing: border-box;
+        @include mq($from:desktop) {
+            width: 660px;
+}
     }
 }
