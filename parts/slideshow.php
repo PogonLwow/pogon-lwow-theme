@@ -1,4 +1,4 @@
-<div class="slider js_slider js_simple section section--main">
+<div class="slider js_slider js_simple">
     <div class="slider__frame">
         <div class='slider__arrows'>
             <button class='slider__prev'><i class='arrow icon-arl'></i></button>

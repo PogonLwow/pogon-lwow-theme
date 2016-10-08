@@ -4,3 +4,9 @@
     });
   }
   cardExcerpt();
+  function featuredTitle() {
+   $(".featured__title").text(function(index, currentText) {
+     return currentText.substr(0, 75) + '\u2026';
+   });
+ }
+ featuredTitle();

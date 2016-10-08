@@ -12,7 +12,12 @@
 
 
 <div class="container">
-    <?php get_template_part('parts/slideshow'); ?>
+    <div class="section section--main">
+        <?php get_template_part('parts/slideshow'); ?>
+        <div class="featured">
+            <?php get_template_part('parts/featured'); ?>
+        </div>
+    </div>
     <?php get_template_part('parts/sidebar'); ?>
 
 </div>
