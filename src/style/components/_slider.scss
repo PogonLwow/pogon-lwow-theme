@@ -1,5 +1,6 @@
 .slider {
     height: 460px;
+    margin: 0 auto;
     cursor: grab;
     width: 420px;
     @include mq($from:desktop) {
