@@ -18,9 +18,13 @@
     cursor: pointer;
     font-weight: bold;
     text-transform: uppercase;
+    box-sizing: border-box;
 
     &:hover {
         background-color: $gold;
         color: $white;
+    }
+    &--golden {
+        background-color: $gold;
     }
 }

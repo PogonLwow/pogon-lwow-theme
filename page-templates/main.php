@@ -8,9 +8,6 @@
 
 <?php get_template_part('parts/topbar'); ?>
 
-
-
-
 <div class="container">
     <div class="section section--main">
         <?php get_template_part('parts/slideshow'); ?>

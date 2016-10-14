@@ -5,18 +5,20 @@
 
 <?php get_template_part('parts/topbar'); ?>
 
-<div id="primary" class="row">
-		<div id="content" role="main">
+<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+	<div class="container">
+		<section class="map" id="pgn-google-map"
+		data-lat="<?php echo $kontakt_options['latitude']; ?>"
+		data-lon="<?php echo $kontakt_options['longtitude']; ?>">
+		<div class="map__container" id="pgn-map"></div>
+		<button class="map__zoomIn btn btn--golden" id="pgn-zoom-in"><i class="icon-plus "></i></button>
+		<button class="map__zoomOut btn btn--golden" id="pgn-zoom-out"><i class="icon-minus"></i></button>
+	</section>
+	</div>
 
-			<?php // theloop
-        if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-            <h2 class="page-header"><?php the_title() ;?></h2>
-            <?php echo do_shortcode('[vsgmap address="Lwów, ul. Kuchera 20/2" width="100%"]'); ?>
-
-            <div class="text"><?php the_content(); ?></div>
+            <?php the_content(); ?>
             <?php wp_link_pages(); ?>
-            <?php //comments_template(); ?>
 
         <?php endwhile; ?>
         <?php else: ?>
@@ -24,13 +26,6 @@
             <?php get_404_template(); ?>
 
         <?php endif; ?>
+<?php get_template_part('parts/sponsors'); ?>
 
-		</div><!-- #content -->
-	</div><!-- #primary -->
-<!--end of sfs-->
-<?php get_template_part('template-part', 'sponsors'); ?>
-<div class="row">
-<?php get_template_part('template-part', 'clubs'); ?>
-<?php get_template_part('template-part', 'partnership'); ?>
-</div>
 <?php get_footer(); ?>

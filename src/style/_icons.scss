@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'temperature';
-  src: url('../font/temperature.eot?7959824');
-  src: url('../font/temperature.eot?7959824#iefix') format('embedded-opentype'),
-       url('../font/temperature.woff2?7959824') format('woff2'),
-       url('../font/temperature.woff?7959824') format('woff'),
-       url('../font/temperature.ttf?7959824') format('truetype'),
-       url('../font/temperature.svg?7959824#temperature') format('svg');
+  src: url('../font/temperature.eot?3872513');
+  src: url('../font/temperature.eot?3872513#iefix') format('embedded-opentype'),
+       url('../font/temperature.woff2?3872513') format('woff2'),
+       url('../font/temperature.woff?3872513') format('woff'),
+       url('../font/temperature.ttf?3872513') format('truetype'),
+       url('../font/temperature.svg?3872513#temperature') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -15,7 +15,7 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'temperature';
-    src: url('../font/temperature.svg?7959824#temperature') format('svg');
+    src: url('../font/temperature.svg?3872513#temperature') format('svg');
   }
 }
 */
@@ -64,7 +64,7 @@
 .icon-rocket:before { content: '\e806'; } /* '' */
 .icon-thumbs-up:before { content: '\e807'; } /* '' */
 .icon-paper-plane:before { content: '\e808'; } /* '' */
-.icon-gplus:before { content: '\e809'; } /* '' */
+.icon-minus:before { content: '\e809'; } /* '' */
 .icon-gwizdek:before { content: '\e80a'; } /* '' */
 .icon-sek:before { content: '\e80b'; } /* '' */
 .icon-prop:before { content: '\e80c'; } /* '' */
@@ -82,6 +82,7 @@
 .icon-medal:before { content: '\e818'; } /* '' */
 .icon-koszb:before { content: '\e819'; } /* '' */
 .icon-fan:before { content: '\e81a'; } /* '' */
+.icon-plus:before { content: '\e81b'; } /* '' */
 .icon-buda:before { content: '\e81c'; } /* '' */
 .icon-apteczka:before { content: '\e81d'; } /* '' */
 .icon-sedzia:before { content: '\e81e'; } /* '' */

@@ -95,7 +95,7 @@ add_action('wp_head', 'opengraph', 5);
 
 // This will ensure that the proper doctype is added to our HTML.
 // Without this code, most platforms would simply skip over our webpage,
-// and the tags we are about to add would never get parsed.
+// and the tags we are kontakt to add would never get parsed.
 function doctype_opengraph($output)
 {
     return $output.'
