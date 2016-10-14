@@ -71,7 +71,7 @@ function js()
     $js_path = get_template_directory_uri().'/build/js';
     wp_register_script('main', $js_path.'/main.min.js', array('jquery'), $version, true);
     wp_register_script('blazy', $js_path.'/blazy.min.js', array('jquery'), $version, true);
-    wp_register_script('map', 'https://maps.googleapis.com/maps/api/js?key='.$google_map_key, false);
+    wp_register_script('map', 'https://maps.googleapis.com/maps/api/js?key='.$google_map_key.'&language=pl', false);
     wp_register_script('map_settings',$js_path.'/map.min.js', array('jquery'), $version, true);
         wp_enqueue_script('blazy');
         wp_enqueue_script('main');

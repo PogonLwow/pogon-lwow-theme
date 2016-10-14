@@ -9,9 +9,9 @@
     var $marker_url = (is_internetExplorer11) ? 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/148866/cd-icon-location.png' : 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/148866/cd-icon-location_1.svg';
 
     //define the basic color of your map, plus a value for saturation and brightness
-    var $main_color = '#6c4892',
-        $saturation = -20,
-        $brightness = 5;
+    var $main_color = '#04022a',
+        $saturation = 0,
+        $brightness = 0;
 
     //we define here the style of the map
     var style = [{
@@ -31,14 +31,14 @@
             featureType: 'road.highway',
             elementType: 'labels',
             stylers: [{
-                visibility: "off"
+                visibility: "on"
         }]
     }, {
             //don't show local road lables on the map
             featureType: "road.local",
             elementType: "labels.icon",
             stylers: [{
-                visibility: "off"
+                visibility: "on"
         }]
     }, {
             //don't show arterial road lables on the map
@@ -52,7 +52,7 @@
             featureType: "road",
             elementType: "geometry.stroke",
             stylers: [{
-                visibility: "off"
+                visibility: "on"
         }]
     },
     //style different elements on the map
@@ -74,7 +74,7 @@
             stylers: [{
                 hue: $main_color
         }, {
-                visibility: "on"
+                visibility: "off"
         }, {
                 lightness: $brightness
         }, {
@@ -122,7 +122,7 @@
             stylers: [{
                 hue: $main_color
         }, {
-                visibility: "on"
+                visibility: "off"
         }, {
                 lightness: $brightness
         }, {
