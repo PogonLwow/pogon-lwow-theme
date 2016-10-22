@@ -16,6 +16,33 @@
     @extend .section__title;
 }
 
+.sp-league-table .team-logo {
+    width: 50px;
+    height: 50px;
+    margin: 10px 10px 10px 0;
+
+    & > img {
+        max-width: 50px;
+        max-height: 50px;
+        width: auto;
+        height: auto;
+        vertical-align: middle;
+        border: 0;
+    }
+}
+.sp-league-table td {
+    padding: 10px 0;
+}
+
+.sp-league-table tr {
+    border-bottom: 1px solid $grey-lighter;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
 .team-logo {
     width: 82px;
     height: auto;
@@ -55,89 +82,99 @@
     margin: 10px 0;
     clear: none;
     font-size: 14px;
+
     & > a {
         @extend .link;
     }
 }
+
 .sp-event-title {
     text-align: center;
     display: block;
     margin: 10px 0;
     clear: none;
+
     & > a {
         @extend .link;
     }
 }
-
 // GALLERY MODYFIERS
-
 .sp-template-player-gallery {
     overflow: hidden;
 }
 
-.sp-player-gallery-wrapper{
+.sp-player-gallery-wrapper {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
 }
+
 .gallery-item {
     margin: 0;
     overflow: hidden;
     width: 210px;
     text-align: center;
     margin-bottom: 20px;
+
     & img {
         width: 210px;
         height: 210px;
     }
-
 }
+
 .gallery-caption {
     margin: 0;
 }
+
 .player-gallery-group-name {
     width: 100%;
 }
-
 // MATCH //
-
 .sp-event-logos {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
 }
+
 .sp-team-logo {
     display: flex;
     flex-flow: column nowrap;
     margin-top: 20px;
+
     & .sp-team-name {
         margin-top: 10px;
     }
 }
+
 .sp-data-table {
     width: 100%;
     text-align: left;
+
     & td {
         text-align: left;
     }
 }
+
 .sp-event-results {
     text-align: center;
+
     & td {
         text-align: center;
     }
 }
 
-.sp-template-event-blocks .sp-row td{
+.sp-template-event-blocks .sp-row td {
     border-bottom: 1px solid $grey-lighter;
 }
-.widget .sp-row td{
-    border-bottom: 0px;
+
+.widget .sp-row td {
+    border-bottom: 0;
 }
 
 .dataTables_paginate {
     margin-top: 20px;
 }
+
 .disabled {
     color: $grey-light;
     cursor: default;
