@@ -4,6 +4,8 @@ jQuery(function($) {
 
     $(document).ready(function() {
 
+        //= parts/sportspress.js
+
         //= parts/trigger.js
 
         //= parts/lazy.js

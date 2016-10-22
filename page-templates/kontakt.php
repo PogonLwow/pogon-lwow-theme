@@ -14,7 +14,7 @@
 		<button class="map__zoomIn btn btn--golden" id="pgn-zoom-in"><i class="icon-plus "></i></button>
 		<button class="map__zoomOut btn btn--golden" id="pgn-zoom-out"><i class="icon-minus"></i></button>
 		</section>
-		<section class="single__content section">
+		<section class="single__content single__content--border-top section">
 		<?php the_content(); ?>
 		</section>
 

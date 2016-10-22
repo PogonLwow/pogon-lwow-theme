@@ -35,7 +35,7 @@ if (have_posts()) : while (have_posts()) : the_post(); ?>
 } ?>
 			</div>
 		</header>
-        <section class="section single__content">
+        <section class="section single__content single__content--border-top">
             <?php the_content(); ?>
         </section>
 
