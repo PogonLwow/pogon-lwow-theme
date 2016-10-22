@@ -98,3 +98,32 @@
 .player-gallery-group-name {
     width: 100%;
 }
+
+// MATCH //
+
+.sp-event-logos {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+.sp-team-logo {
+    display: flex;
+    flex-flow: column nowrap;
+    margin-top: 20px;
+    & .sp-team-name {
+        margin-top: 10px;
+    }
+}
+.sp-data-table {
+    width: 100%;
+    text-align: left;
+    & td {
+        text-align: left;
+    }
+}
+.sp-event-results {
+    text-align: center;
+    & td {
+        text-align: center;
+    }
+}
