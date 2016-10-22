@@ -127,3 +127,23 @@
         text-align: center;
     }
 }
+
+.sp-template-event-blocks .sp-row td{
+    border-bottom: 1px solid $grey-lighter;
+}
+.widget .sp-row td{
+    border-bottom: 0px;
+}
+
+.dataTables_paginate {
+    margin-top: 20px;
+}
+.disabled {
+    color: $grey-light;
+    cursor: default;
+}
+
+.paginate_button {
+    padding: 5px;
+    cursor: pointer;
+}
