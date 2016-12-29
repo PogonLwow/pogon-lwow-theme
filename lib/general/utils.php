@@ -1,30 +1,35 @@
 <?php
 
 
-function wpdocs_theme_name_wp_title($title, $sep)
-{
-    if (is_feed()) {
-        return $title;
-    }
+function seo_title() {
+	global $post, $page, $paged;
+	$sep = " » "; # Separator
+	$newtitle = get_bloginfo('name'); # Default
 
-    global $page, $paged;
+	# Single page ########################################
+	if (is_single() || is_page()) {
+		$newtitle = single_post_title("", false); # default title
+	}
 
-    // Add the blog name
+	# Search results ########################################
+	if (is_search())
+	 $newtitle = "Wyniki wyszukiwania: " . $s;
 
 
-    // Add the blog description for the home/front page.
-    if ((is_home() || is_front_page())) {
-        $title .= get_bloginfo('name', 'display');
-    }
+	# Add page number if necesary
+	if ($paged >= 2 || $page >= 2)
+			$newtitle .= $sep . sprintf('Strona %s', max($paged, $page));
 
-    // Add a page number if necessary:
-    if (($paged >= 2 || $page >= 2) && !is_404()) {
-        $title .= " $sep ".sprintf(__('Strona %s', '_s'), max($paged, $page));
-    }
+	# Home & Front Page ########################################
+	if (is_home() || is_front_page()) {
+		$newtitle = get_bloginfo('name') . $sep . get_bloginfo('description');
+	} else {
+		$newtitle .= " » " . get_bloginfo('name');
+	}
 
-    return $title;
+	return $newtitle;
 }
-add_filter('wp_title', 'wpdocs_theme_name_wp_title', 10, 2);
+add_filter('wp_title', 'seo_title');
 
 function pogon_footer_admin()
 {
