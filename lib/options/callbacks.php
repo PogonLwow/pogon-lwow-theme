@@ -22,6 +22,10 @@ function pgn_position_callback() {
   global $general_options;
     echo '<input type="text" id="position_id" name="pgn_general_page_option[position]" value="' . $general_options['position']. '"></input>';
 }
+function pgn_table_callback() {
+  global $general_options;
+    echo '<input type="text" id="table_id" name="pgn_general_page_option[table]" value="' . $general_options['table']. '"></input>';
+}
 
 // ===============O NAS===================== //
 

@@ -72,6 +72,13 @@ add_settings_section(
     'pgn_general_page_option',
     'pgn_general_page'
 );
+    add_settings_field(
+    'table',
+    'Link do tabeli ligowej',
+    'pgn_table_callback',
+    'pgn_general_page_option',
+    'pgn_general_page'
+);
 
 // ===============O NAS================= //
 add_settings_section(

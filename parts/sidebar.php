@@ -11,7 +11,7 @@
             </div>
             <span class="sblock__posLabel">miejsce</span>
             <div class="sblock__table">
-                <a class="link link--nav" href="<?php echo $dm_settings['tabela'] ?>"><i class="icon-medal medal"></i> Pełna tabela ligowa</a>
+                <a class="link link--nav" href="<?php echo $general_options['table']; ?>"><i class="icon-medal medal"></i> Pełna tabela ligowa</a>
             </div>
 
     </div>
