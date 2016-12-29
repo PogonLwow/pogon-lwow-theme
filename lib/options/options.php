@@ -58,6 +58,20 @@ add_settings_section(
     'pgn_general_page_option',
     'pgn_general_page'
 );
+    add_settings_field(
+    'position',
+    'Pozycja',
+    'pgn_position_callback',
+    'pgn_general_page_option',
+    'pgn_general_page'
+);
+    add_settings_field(
+    'store_link',
+    'Link do sklepu',
+    'pgn_store_link_callback',
+    'pgn_general_page_option',
+    'pgn_general_page'
+);
 
 // ===============O NAS================= //
 add_settings_section(
