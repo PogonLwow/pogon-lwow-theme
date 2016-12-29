@@ -1,4 +1,4 @@
-<?php global $dm_settings; ?>
+<?php global $general_options; ?>
 <div class="footer container">
     <div class="footer__ct">
         <div class="copyright">
@@ -27,14 +27,15 @@
         </nav>
     </div>
     <div class="social">
-        <a class="link link--social link--vk" href="<?php echo $dm_settings['vk'] ?>">
+        <a class="link link--social link--vk" href="<?php echo $general_options['vk_link'] ?>">
             <i class="icon-vkontakte "></i>
         </a>
-        <a class="link link--social link--tw" href="<?php echo $dm_settings['twitter'] ?>">
+        <a class="link link--social link--tw" href="<?php echo $general_options['twitter_link'] ?>">
             <i class="icon-twitter"></i>
         </a>
-        <a class="link link--social link--fb" href="<?php echo $dm_settings['facebook'] ?>">
+        <a class="link link--social link--fb" href="<?php echo $general_options['fb_link']; ?>">
             <i class="icon-facebook "></i>
+
         </a>
     </div>
     </div>
@@ -42,5 +43,4 @@
 </div>
 <?php wp_footer(); ?>
 </body>
-
 </html>

@@ -94,7 +94,6 @@ function pgn_validate_options( $input ) {
   $input['vk_link'] = wp_filter_nohtml_kses( $input['vk_link'] );
 
 
-  $input['robodrift_edition'] = wp_filter_nohtml_kses( $input['robodrift_edition'] );
   $input['latitude'] = wp_filter_nohtml_kses( $input['latitude'] );
   $input['longtitude'] = wp_filter_nohtml_kses( $input['longtitude'] );
 

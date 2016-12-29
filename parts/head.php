@@ -17,13 +17,13 @@
 
         <div class="social">
             <span class="social__followUs">Zobacz nas na:</span>
-            <a class="link link--social link--vk" href="<?php echo $dm_settings['vk'] ?>">
+            <a class="link link--social link--vk" href="<?php echo $general_options['vk_link'] ?>">
                 <i class="icon-vkontakte"></i>
             </a>
-            <a class="link link--social link--tw" href="<?php echo $dm_settings['twitter'] ?>">
+            <a class="link link--social link--tw" href="<?php echo $general_options['twitter_link'] ?>">
                 <i class="icon-twitter social__icon social__icon--tw"></i>
             </a>
-            <a class="link link--social link--fb" href="<?php echo $dm_settings['facebook'] ?>">
+            <a class="link link--social link--fb" href="<?php echo $general_options['fb_link'] ?>">
                 <i class="icon-facebook social__icon social__icon--fb"></i>
             </a>
         </div>
