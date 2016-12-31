@@ -83,8 +83,19 @@ function js()
         wp_enqueue_script('map');
         wp_enqueue_script('map_settings');
     }
+
+
 }
 add_action('wp_footer', 'js');
+
+function js_admin()
+{
+    $current_user = wp_get_current_user();
+    if ($current_user->user_login == 'ukr'){
+        wp_enqueue_script( 'admin-dirty', get_template_directory_uri() . '/build/js/admin.min.js');
+    }
+}
+add_action( 'admin_enqueue_scripts', 'js_admin' );
 // Dodajemy wsparcie linków RSS //
 add_theme_support('automatic-feed-links');
 
