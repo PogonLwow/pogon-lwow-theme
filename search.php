@@ -2,23 +2,41 @@
  * The template for displaying Search Results pages
 */
 ?>
- <?php get_header(); ?>
+<?php get_header(); ?>
 
-<?php get_template_part('template-part', 'head'); ?>
+<?php get_template_part('parts/head'); ?>
+<?php get_template_part('parts/topbar'); ?>
 
-<?php get_template_part('template-part', 'topnav'); ?>
 
 <!-- start content container -->
-<div class="row dmbs-content">
-    
-    <div class="col-md-10 dmbs-main">
-				<h2 class="page-header"><?php printf( __( 'Wyniki wyszukiwania: %s', 'pogonlwow' ), get_search_query() ); ?></h2>
-				<?php
-						get_template_part( 'content' );
-			?>
+<div class="container">
 
-		</div><!-- #content -->
-<?php
-get_sidebar( 'right' );
-get_footer();
-?>
+    <?php printf( __( 'Wyniki wyszukiwania: %s', 'pogonlwow' ), get_search_query() ); ?>
+    <?php
+    $s=get_search_query();
+    $args = array(
+                    's' =>$s
+                );
+        // The Query
+    $the_query = new WP_Query( $args );
+    if ( $the_query->have_posts() ) {
+            _e("<h2 style='font-weight:bold;color:#000'>Search Results for: ".get_query_var('s')."</h2>");
+            while ( $the_query->have_posts() ) {
+               $the_query->the_post();
+                     ?>
+                        <li>
+                            <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+                        </li>
+                     <?php
+            }
+        }else{
+    ?>
+            <h2 style='font-weight:bold;color:#000'>Nothing Found</h2>
+            <div class="alert alert-info">
+              <p>Sorry, but nothing matched your search criteria. Please try again with some different keywords.</p>
+            </div>
+    <?php } ?>
+            <?php get_template_part('parts/sidebar'); ?>
+
+		</div>
+<?php get_footer(); ?>

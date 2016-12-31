@@ -20,7 +20,7 @@ $featured = new WP_Query($featured_args);
         while ($featured->have_posts()) {
             $featured->the_post();?>
           <div class="featured__item">
-              <a title="<?php the_title(); ?>" href="<?php echo $url; ?>" class="link link--nav" target="_blank">
+              <a title="<?php the_title(); ?>" href="<?php echo get_permalink(); ?>" class="link link--nav" target="_blank">
                   <div class="featured__time"><?php echo get_the_time('j F Y'); ?></div>
                   <img class="featured__image blazy" alt=""
                   src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
