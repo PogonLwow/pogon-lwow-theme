@@ -3,42 +3,8 @@
     var post_offset = 0;
     var incNumber = 6; // ilość postów do załadowania
 
-    var projects = (function(setProjects) {
-        var loaded;
-        var total;
-        return {
-            incLoaded: function() {
-                loaded = loaded + incNumber;
-            },
-            getLoaded: function() {
-                return loaded;
-            },
-            setLoaded: function(setProjects) {
-                loaded = setProjects;
-            },
-            setTotal: function(setProjects) {
-                total = setProjects;
-            },
-            getTotal: function() {
-                return total;
-            }
-        };
-    })();
-    var loadingButton = (function(button){
-        return {
-            showSpinner: function(button) {
-                button.html('Ładuję starsze...');
-            },
-            showCaption: function(button) {
-                button.html('Zobacz starsze');
-            },
-            hide: function(button) {
-                button.hide();
-            }
-        };
-    })();
-
     $('#load_more_posts').on('click', loadMore);
+    $('#load_more_searched_posts').on('click', loadMoreSearched);
 
     function loadMore() {
         console.log('Clicked load_more');
@@ -53,6 +19,30 @@
             },
             success: function(data) {
                 $('#load_more_posts').html('Zobacz starsze');
+                $('#feed').append(data);
+                console.info('Ajax: OK');
+                bLazy.revalidate();
+                cardExcerpt();
+            }
+        });
+    }
+
+
+
+    function loadMoreSearched() {
+        console.log('Clicked load_more_searched');
+        $(this).html('Ładuję...');
+        post_offset = parseInt(post_offset) + 6;
+        $.ajax({
+            url: ajax_url,
+            type: 'POST',
+            data: {
+                action: 'load_searched_posts',
+                post_offset: post_offset,
+                s: document.getElementById("searchQuery").getAttribute("data-search-query")
+            },
+            success: function(data) {
+                $('#load_more_searched_posts').html('Więcej wyników');
                 $('#feed').append(data);
                 console.info('Ajax: OK');
                 bLazy.revalidate();

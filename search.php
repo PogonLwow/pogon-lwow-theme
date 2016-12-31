@@ -1,42 +1,31 @@
-<?php/**
- * The template for displaying Search Results pages
-*/
-?>
 <?php get_header(); ?>
 
 <?php get_template_part('parts/head'); ?>
 <?php get_template_part('parts/topbar'); ?>
-
-
-<!-- start content container -->
 <div class="container">
-
-    <?php printf( __( 'Wyniki wyszukiwania: %s', 'pogonlwow' ), get_search_query() ); ?>
     <?php
-    $s=get_search_query();
+    $s = get_search_query();
+    $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
     $args = array(
-                    's' =>$s
-                );
-        // The Query
-    $the_query = new WP_Query( $args );
-    if ( $the_query->have_posts() ) {
-            _e("<h2 style='font-weight:bold;color:#000'>Search Results for: ".get_query_var('s')."</h2>");
-            while ( $the_query->have_posts() ) {
-               $the_query->the_post();
-                     ?>
-                        <li>
-                            <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-                        </li>
-                     <?php
-            }
-        }else{
+        'pagination' => true,
+        'posts_per_page' => '6',
+        'paged' => $paged,
+        's' =>$s
+    );
+    $posts = new WP_Query($args);
     ?>
-            <h2 style='font-weight:bold;color:#000'>Nothing Found</h2>
-            <div class="alert alert-info">
-              <p>Sorry, but nothing matched your search criteria. Please try again with some different keywords.</p>
-            </div>
-    <?php } ?>
-            <?php get_template_part('parts/sidebar'); ?>
+    <section class="section section--main" id="searchQuery" data-search-query="<?php echo $s; ?>">
+        <div class="container--cards container" id="feed">
+                <?php card($posts); ?>
+        </div>
+        <div class="load-more-container">
+            <button id="load_more_searched_posts" class="btn btn--loadMore  btn--synergia">Więcej wyników</button>
+        </div>
+    </section>
+    <?php get_template_part('parts/sidebar'); ?>
 
-		</div>
+</div>
+
+<?php get_template_part('parts/sponsors'); ?>
+
 <?php get_footer(); ?>

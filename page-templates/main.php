@@ -1,6 +1,4 @@
 <?php/** * Template Name: Główna * */ ?>
-<?php global $dm_settings; ?>
-
 
  <?php get_header(); ?>
 

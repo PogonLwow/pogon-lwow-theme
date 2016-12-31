@@ -1,5 +1,5 @@
 <?php global $general_options; ?>
-<body <?php body_class(); ?> data-ajax-url="<?php echo admin_url('admin-ajax.php'); ?>">
+<body data-ajax-url="<?php echo admin_url('admin-ajax.php'); ?>">
 
 <div class="container head">
     <div class="logoContainer">
