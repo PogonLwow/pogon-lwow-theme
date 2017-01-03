@@ -3,31 +3,31 @@
 function header_meta_tags()
 {   // Favicon //
     // Firefox, Chrome, Safari, IE 11+ and Opera. 196x196 pixels in size
-    echo '<link rel="icon" href="'.get_template_directory_uri().'/build/img/favicon.png" />'."\n";
+    echo '<link rel="icon" href="'.get_template_directory_uri().'/build/img/fav.png" />'."\n";
 
     // Apple stuff //
     // Touch Icons - iOS and Android 2.1+ 180x180 pixels in size
-    echo '<link rel="apple-touch-icon-precomposed" href="'.get_template_directory_uri().'/build/img/apple-touch-icon-precomposed.png">'."\n";
-    echo '<link rel="apple-touch-icon" href="'.get_template_directory_uri().'/build/img/safari_60.png">'."\n";
-    echo '<link rel="apple-touch-icon" sizes="76x76" href="'.get_template_directory_uri().'/build/img/safari_76.png">'."\n";
-    echo '<link rel="apple-touch-icon" sizes="120x120" href="'.get_template_directory_uri().'/build/img/safari_120.png">'."\n";
-    echo '<link rel="apple-touch-icon" sizes="152x152" href="'.get_template_directory_uri().'/build/img/safari_152.png">'."\n";
-    echo '<link rel="apple-touch-startup-image" href="'.get_template_directory_uri().'/build/img/apple-touch-icon-precomposed.png">'."\n";
+    // echo '<link rel="apple-touch-icon-precomposed" href="'.get_template_directory_uri().'/build/img/apple-touch-icon-precomposed.png">'."\n";
+    // echo '<link rel="apple-touch-icon" href="'.get_template_directory_uri().'/build/img/safari_60.png">'."\n";
+    // echo '<link rel="apple-touch-icon" sizes="76x76" href="'.get_template_directory_uri().'/build/img/safari_76.png">'."\n";
+    // echo '<link rel="apple-touch-icon" sizes="120x120" href="'.get_template_directory_uri().'/build/img/safari_120.png">'."\n";
+    // echo '<link rel="apple-touch-icon" sizes="152x152" href="'.get_template_directory_uri().'/build/img/safari_152.png">'."\n";
+    // echo '<link rel="apple-touch-startup-image" href="'.get_template_directory_uri().'/build/img/apple-touch-icon-precomposed.png">'."\n";
     // Nazwa aplikacji
     echo '<meta name="apple-mobile-web-app-title" content="'.get_bloginfo('name').'">'."\n";
     // Wygląd statusbaru
-    echo '<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">'."\n";
+    // echo '<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">'."\n";
     // Enables or disables automatic detection of possible phone numbers in a webpage in Safari on iOS.
     echo '<meta name="format-detection" content="telephone=no">'."\n";
 
     // MS stuff //
     // For IE 9 and below. ICO should be 32x32 pixels in size
-    echo '<!--[if IE]><link rel="shortcut icon" href="'.get_template_directory_uri().'/img/favicon.ico"><![endif]-->'."\n";
+    echo '<!--[if IE]><link rel="shortcut icon" href="'.get_template_directory_uri().'/img/fav.ico"><![endif]-->'."\n";
 
     // Android stuff //
     echo '<meta name="application-name" content="'.get_bloginfo('name').'">'."\n";
     // Kolor nagłówka
-    echo '<meta name="theme-color" content="#6c4892">'."\n";
+    echo '<meta name="theme-color" content="#e8c569">'."\n";
 }
 add_action('wp_head', 'header_meta_tags');
 

@@ -24,9 +24,9 @@
             <h4 class="slider__title">
                 <a class="link link--footer" href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a>
             </h4>
-            <div class="read-more-wpsp">
+            <!-- <div class="read-more-wpsp">
                 <a class="gold" href="<?php get_permalink(); ?>">czytaj więcej</a>
-            </div>
+            </div> -->
         </div>
     </li>
 <?php endwhile;
