@@ -182,7 +182,7 @@ body {
   background-image: url("../img/bg.png");
   background-repeat: no-repeat;
   background-position: top;
-  background-color: #04022a;
+  background-color: #11002F;
   font-family: "Merriweather Sans", Tahoma, Verdana, Segoe, sans-serif;
   font-size: 14px;
   line-height: 1.4; }
@@ -1428,11 +1428,15 @@ table {
   cursor: pointer; }
 
 .slider {
-  height: 460px;
-  margin: 0 auto;
-  cursor: -webkit-grab;
-  cursor: grab;
-  width: 420px; }
+  display: none; }
+  @media screen and (min-width: 30em) {
+    .slider {
+      height: 460px;
+      margin: 0 auto;
+      cursor: -webkit-grab;
+      cursor: grab;
+      width: 420px;
+      display: block; } }
   @media screen and (min-width: 58.125em) {
     .slider {
       width: 730px; } }
@@ -1458,10 +1462,6 @@ table {
     width: 730px; }
   .slider__arrows {
     line-height: 0;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-flex-flow: column nowrap;
         -ms-flex-flow: column nowrap;
             flex-flow: column nowrap;
@@ -1472,7 +1472,14 @@ table {
     height: 160px;
     width: 70px;
     font-size: 27px;
-    background-color: rgba(0, 0, 0, 0.7); }
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none; }
+    @media screen and (min-width: 58.125em) {
+      .slider__arrows {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex; } }
   .slider__prev, .slider__next {
     background-color: transparent;
     border: none;
