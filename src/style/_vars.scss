@@ -46,7 +46,7 @@ $image-opacity: 0.6;
 // $gradient-purple: linear-gradient(rgba($pogon-color, 1) 10%, transparent 100%);
 // Breakpoints //
 $mq-media-type: screen;
-$mq-breakpoints: ( mobile: 480px, mobilef: 515px, tabletf:767px, tablet: 850px, desktop: 930px, wide: 1200px );
+$mq-breakpoints: (tiny: 335px, mobile: 480px, mobilef: 515px, tabletf:767px, tablet: 850px, desktop: 930px, wide: 1200px );
 /**
 * Set up reusable colors
 */

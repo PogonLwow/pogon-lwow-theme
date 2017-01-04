@@ -1,9 +1,8 @@
 .sponsors {
     display: flex;
-    flex-flow: row;
+    flex-flow: row wrap;
     margin-top: 15px;
     justify-content: space-around;
-    flex-wrap: wrap;
 }
 .brand {
     position: relative;

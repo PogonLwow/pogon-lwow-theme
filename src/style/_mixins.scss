@@ -17,16 +17,16 @@
 // SVG background images with PNG fallback (supporting retina displays) [Found on http://zerosixthree.se/8-sass-mixins-you-must-have-in-your-toolbox/]
 // $name and $image-path are in _vars.scss
 @mixin background-image($name, $size:false) {
-	// background-image: url(#{$image-path}/#{$name}.svg);
-	// @if($size) {
-	// 	background-size: $size;
-	// }
-	// .no-svg & {
+	background-image: url(#{$image-path}/#{$name}.svg);
+	@if($size) {
+		background-size: $size;
+	}
+	.no-svg & {
 	background-image: url("#{$image-path}/#{$name}.#{$fallback-extension}");
 	@media only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
 		background-image: url("#{$image-path}/#{$name}#{$retina-suffix}.#{$fallback-extension}");
 	}
-	// }
+	}
 }
 // Vertical align anything
 // http://zerosixthree.se/vertical-align-anything-with-just-3-lines-of-css/

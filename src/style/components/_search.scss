@@ -50,10 +50,14 @@
         font-weight: 400;
         font-size: 30px;
         margin-left: 20px;
+        text-align: center;
+
         @include mq($from:desktop) {
             height: 26px;
             font-size: inherit;
             margin-left: 0px;
+            text-align: left;
+
 
         }
     }
