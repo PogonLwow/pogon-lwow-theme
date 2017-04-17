@@ -1,9 +1,9 @@
 <?php/** Template Name: Galeria **/ ?>
- <?php get_header(); ?>
+<?php get_header(); ?>
 
-<?php get_template_part('template-part', 'head'); ?>
+<?php get_template_part('parts/head'); ?>
 
-<?php get_template_part('template-part', 'topnav'); ?>
+<?php get_template_part('parts/topbar'); ?>
 
 <div id="primary" class="row">
     <div id="content" role="main">
@@ -24,7 +24,7 @@
                       <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
                   </h2>
             </div>
-          
+
       </li>
     <?php endforeach; ?>
   </ul>
