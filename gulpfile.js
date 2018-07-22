@@ -187,6 +187,6 @@ gulp.task('set-dev', development.task);
 gulp.task('set-prod', production.task);
 
 // TASKS
-gulp.task('dev', ['set-dev', 'scss', 'js', 'img', 'fonts', 'webserver', 'watch']);
-gulp.task('devv', ['set-dev', 'scss', 'js', 'img', 'fonts', 'watch']);
-gulp.task('prod', ['set-prod', 'scss', 'js', 'img', 'fonts']);
+gulp.task('serve', ['set-dev', 'scss', 'js', 'img', 'fonts', 'webserver', 'watch']);
+gulp.task('dev', ['set-dev', 'scss', 'js', 'img', 'fonts', 'watch']);
+gulp.task('build', ['set-prod', 'scss', 'js', 'img', 'fonts']);
