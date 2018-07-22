@@ -1,4 +1,4 @@
-<?php/** * Template Name: Pomoc * */ ?>
+<?php /* Template Name: Pomoc */ ?>
 <?php get_header(); ?>
 
 <?php get_template_part('parts/head'); ?>

@@ -1,4 +1,4 @@
-<?php/** * Template Name: Kontakt * */ ?>
+<?php /* Template Name: Kontakt */ ?>
 <?php get_header(); ?>
 
 <?php get_template_part('parts/head'); ?>

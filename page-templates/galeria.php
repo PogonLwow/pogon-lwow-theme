@@ -1,4 +1,4 @@
-<?php/** Template Name: Galeria **/ ?>
+<?php /* Template Name: Galeria */ ?>
 <?php get_header(); ?>
 
 <?php get_template_part('parts/head'); ?>
