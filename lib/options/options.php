@@ -80,6 +80,14 @@ add_settings_section(
     'pgn_general_page'
 );
 
+add_settings_field(
+    'patrons_pdf',
+    'Link do karty zgłoszeniowej mecenasa',
+    'pgn_patrons_pdf_callback',
+    'pgn_general_page_option',
+    'pgn_general_page'
+);
+
 // ===============O NAS================= //
 add_settings_section(
     'pgn_kontakt_page',

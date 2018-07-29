@@ -27,6 +27,11 @@ function pgn_table_callback() {
     echo '<input type="text" id="table_id" name="pgn_general_page_option[table]" value="' . $general_options['table']. '"></input>';
 }
 
+function pgn_patrons_pdf_callback() {
+  global $general_options;
+    echo '<input type="text" id="patrons_pdf_id" name="pgn_general_page_option[patrons_pdf]" value="' . $general_options['patrons_pdf']. '"></input>';
+}
+
 // ===============O NAS===================== //
 
 function pgn_latitude_callback() {

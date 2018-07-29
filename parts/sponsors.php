@@ -1,3 +1,6 @@
+
+<?php global $general_options; ?>
+
 <?php
 // Wyświetla logotypy zawarte w linki naszych sponsorów i partnerów //
 
@@ -91,7 +94,7 @@ function show_patrons($items) {
     } else {
         echo 'Brak mecenasów';
     }
-    ?> </table> <?php
+    ?> </table><?php
 }
 
 // Następnie wywołujemy tę funkcję w HTMLu
@@ -107,6 +110,9 @@ function show_patrons($items) {
             <h4 class="section__title">Mecenasi</h4>
             <div class="patrons">
                 <?php show_patrons($patrons); ?>
+                <div class="patrons--become">
+                    <a class="btn btn--golden" href="http://<?php echo $general_options['patrons_pdf']; ?>">Zostań mecenasem</a>
+                </div>
             </div>
         </section>
 
