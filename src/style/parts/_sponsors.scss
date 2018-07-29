@@ -27,3 +27,23 @@
         image-rendering: -moz-optimizeSpeed;
     }
 }
+
+.patrons {
+    margin-top: 15px;
+
+    table {
+      width: 100%;
+      text-align: left;
+      border-collapse: collapse;
+    }
+    table td, table th {
+      border-bottom: 1px solid $grey-lighter;
+      padding: 10px 10px;
+    }
+    table tbody td {
+      // font-size: 13px;
+    }
+    table tr:nth-child(even) {
+      // background: #D0E4F5;
+    }
+}

@@ -44,6 +44,9 @@ include 'lib/posts/utils.php';
 include 'lib/sponsors/utils.php';
 include 'lib/sponsors/post-type.php';
 
+include 'lib/patrons/utils.php';
+include 'lib/patrons/post-type.php';
+
 include 'lib/options/options.php';
 
 
@@ -108,4 +111,4 @@ add_theme_support('automatic-feed-links');
  // Add support for a featured image and the size
  ////////////////////////////////////////////////////////////////////
 
-     add_theme_support( 'post-thumbnails' );
+add_theme_support( 'post-thumbnails' );
