@@ -31,7 +31,6 @@
 
     &__logo {
         @include transition($bezier);
-        @include background-image( 'logo-mobile');
         background-repeat: no-repeat;
         display: block;
         width: 64px;
@@ -41,6 +40,13 @@
             @include background-image( 'logo');
             width: 131px;
             height: 140px;
+        }
+
+        &--klub {
+            @include background-image( 'logo-mobile');
+            @include mq($from:tablet) {
+                @include background-image( 'logo');
+            }
         }
     }
 
