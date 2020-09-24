@@ -37,15 +37,20 @@
         height: 68px;
         z-index: 5;
         @include mq($from:tablet) {
-            @include background-image( 'logo');
             width: 131px;
             height: 140px;
         }
 
-        &--klub {
-            @include background-image( 'logo-mobile');
+        &--club {
+            @include background-image( 'logo-mobile-club');
             @include mq($from:tablet) {
-                @include background-image( 'logo');
+                @include background-image( 'logo-club');
+            }
+        }
+        &--foundation {
+            @include background-image( 'logo-mobile-foundation');
+            @include mq($from:tablet) {
+                @include background-image( 'logo-foundation');
             }
         }
     }

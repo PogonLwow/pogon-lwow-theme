@@ -1,4 +1,3 @@
-
 <?php
 // Info o motywie //
     $theme = wp_get_theme();
@@ -37,6 +36,9 @@ include 'lib/general/topwalker.php';
 include 'lib/general/footerwalker.php';
 include 'lib/general/humans.php';
 
+include 'lib/customizer/customizer.php';
+
+
 include 'lib/posts/ajax.php';
 include 'lib/posts/card.php';
 include 'lib/posts/utils.php';
@@ -47,7 +49,8 @@ include 'lib/sponsors/post-type.php';
 include 'lib/patrons/utils.php';
 include 'lib/patrons/post-type.php';
 
-include 'lib/options/options.php';
+// include 'lib/options/options.php';
+
 
 
 // include 'lib/general/humans.php';
