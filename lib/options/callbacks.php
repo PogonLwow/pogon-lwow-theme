@@ -10,10 +10,7 @@ function pgn_twitter_link_callback() {
   global $general_options;
     echo '<input type="text" id="twitter_link_id" name="pgn_general_page_option[twitter_link]" value="' . $general_options['twitter_link']. '"></input>';
 }
-function pgn_vk_link_callback() {
-  global $general_options;
-    echo '<input type="text" id="vk_link_id" name="pgn_general_page_option[vk_link]" value="' . $general_options['vk_link']. '"></input>';
-}
+
 function pgn_store_link_callback() {
   global $general_options;
     echo '<input type="text" id="store_link_id" name="pgn_general_page_option[store_link]" value="' . $general_options['store_link']. '"></input>';

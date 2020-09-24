@@ -27,9 +27,6 @@
         </nav>
     </div>
     <div class="social">
-        <a class="link link--social link--vk" href="<?php echo $general_options['vk_link'] ?>">
-            <i class="icon-vkontakte "></i>
-        </a>
         <a class="link link--social link--tw" href="<?php echo $general_options['twitter_link'] ?>">
             <i class="icon-twitter"></i>
         </a>

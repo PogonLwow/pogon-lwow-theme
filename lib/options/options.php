@@ -51,13 +51,7 @@ add_settings_section(
     'pgn_general_page_option',
     'pgn_general_page'
 );
-    add_settings_field(
-    'vk_link',
-    'Link do VK',
-    'pgn_vk_link_callback',
-    'pgn_general_page_option',
-    'pgn_general_page'
-);
+
     add_settings_field(
     'position',
     'Pozycja',
@@ -120,7 +114,6 @@ $kontakt_options = get_option('pgn_kontakt_page_option');
 function pgn_validate_options( $input ) {
   $input['fb_link'] = wp_filter_nohtml_kses( $input['fb_link'] );
   $input['twitter_link'] = wp_filter_nohtml_kses( $input['twitter_link'] );
-  $input['vk_link'] = wp_filter_nohtml_kses( $input['vk_link'] );
 
 
   $input['latitude'] = wp_filter_nohtml_kses( $input['latitude'] );
