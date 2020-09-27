@@ -106,6 +106,8 @@ function show_patrons($items) {
                 <?php show_links($sponsors); ?>
             </div>
         </section>
+        <?php if (get_theme_mod('purpose') == 'club') { ?>
+
         <section class="section section--white section--red-deco section--side">
             <h4 class="section__title">Mecenasi</h4>
             <div class="patrons">
@@ -115,6 +117,7 @@ function show_patrons($items) {
                 </div>
             </div>
         </section>
+        <?php } ?>
 
     </div>
 

@@ -2,6 +2,8 @@
 
 <section class="section section--side">
     <?php dynamic_sidebar( 'Right Sidebar' ); ?>
+
+    <?php if (get_theme_mod('purpose') == 'club') { ?>
     <div class="sblockContainer">
         <div class="sblock">
         <h3 class="sblock__title">Pozycja</h3>
@@ -14,17 +16,18 @@
                 <a class="link link--nav" href="<?php echo $general_options['table']; ?>"><i class="icon-medal medal"></i> Pełna tabela ligowa</a>
             </div>
 
-    </div>
+        </div>
 
-    <a href="<?php echo $general_options['store_link']; ?>">
+        <a href="<?php echo $general_options['store_link']; ?>">
 
-    <div class="sblock sblock--shop">
-            <a class="link link--footer link--shop" href="<?php echo $general_options['store_link']; ?>">
-                SKLEP <br />INTERNETOWY
-            </a>
-    </div>
-</a>
+            <div class="sblock sblock--shop">
+                    <a class="link link--footer link--shop" href="<?php echo $general_options['store_link']; ?>">
+                        SKLEP <br />INTERNETOWY
+                    </a>
+            </div>
+        </a>
 
     </div>
+    <?php } ?>
 
 </section>
