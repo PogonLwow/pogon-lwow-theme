@@ -2,7 +2,11 @@
 <div class="footer container">
     <div class="footer__ct">
         <div class="copyright">
-            <?php echo comicpress_copyright(); ?> <strong>Lwowski Klub Sportowy POGOŃ LWÓW</strong>
+            <?php if (get_theme_mod('purpose') == 'club') { ?>
+                <?php echo comicpress_copyright(); ?> <strong>Lwowski Klub Sportowy POGOŃ LWÓW</strong>
+            <?php } elseif (get_theme_mod('purpose') == 'foundation') { ?>
+                <?php echo comicpress_copyright(); ?> <strong><?php bloginfo('name'); ?></strong>
+            <?php } ?>
             <br>Wszelkie prawa zastrzeżone.</div>
         <div class="tribute">
             <div class="tribute__design">Grafika: <a class="link link--footer" href="http://wiktorkolodziej.pl">wiktorkolodziej.pl</a>
