@@ -4,13 +4,22 @@
 @import "icons";
 
 body {
-    background-image: url('../img/bg.png');
     background-repeat: no-repeat;
     background-position: top;
     background-color: #11002F;
     font-family: $font;
     font-size: $font-size;
     line-height: $line-height;
+}
+
+.background {
+    &--club {
+        background-image: url('../img/bg-club.png');
+    }
+
+    &--foundation {
+        background-image: url('../img/bg-foundation.png');
+    }
 }
 
 .container {

@@ -73,7 +73,6 @@ function js()
 {
     global $version, $pgn_settings;
     $google_map_key = 'AIzaSyDFGqJn95IObdCf2GSkHMsO2SrCgLeyCq4';
-    // $google_map_key = "AIzaSyD6ovUl5OZwwEa_MzTArrazVuvVtCMH-B8";
     $js_path = get_template_directory_uri().'/build/js';
     wp_register_script('main', $js_path.'/main.min.js', array('jquery'), $version, true);
     wp_register_script('blazy', $js_path.'/blazy.min.js', array('jquery'), $version, true);

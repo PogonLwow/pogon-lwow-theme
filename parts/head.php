@@ -1,5 +1,5 @@
 <?php global $general_options; ?>
-<body data-ajax-url="<?php echo admin_url('admin-ajax.php'); ?>">
+<body data-ajax-url="<?php echo admin_url('admin-ajax.php'); ?>" class="background--<?php echo get_theme_mod('purpose'); ?>">
 
 <div class="container head">
     <div class="logoContainer">
