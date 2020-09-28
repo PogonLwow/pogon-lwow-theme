@@ -49,7 +49,7 @@ include 'lib/sponsors/post-type.php';
 include 'lib/patrons/utils.php';
 include 'lib/patrons/post-type.php';
 
-// include 'lib/options/options.php';
+include 'lib/options/options.php';
 
 
 
