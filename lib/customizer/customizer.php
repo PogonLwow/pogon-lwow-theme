@@ -89,6 +89,30 @@ function pogon_theme_customize_register( $wp_customize ) {
         'label' => __( 'Strona tabeli', 'pogon_theme' ),
         'section' => 'pogon_theme_special_settings_section',
     ));
+
+    $wp_customize->add_setting( 'longtitude', array(
+      'default' => '',
+          'sanitize_callback' => 'esc_attr',
+    ) );
+
+    $wp_customize->add_control( 'longtitude', array(
+      'type' => 'text',
+      'label' => __( 'Długość geograficzna (lon)', 'pogon_theme' ),
+      'section' => 'pogon_theme_special_settings_section',
+  ));
+
+  $wp_customize->add_setting( 'latitude', array(
+    'default' => '',
+        'sanitize_callback' => 'esc_attr',
+  ) );
+
+  $wp_customize->add_control( 'latitude', array(
+    'type' => 'text',
+    'label' => __( 'Szerokość geograficzna (lat)', 'pogon_theme' ),
+    'section' => 'pogon_theme_special_settings_section',
+));
+
+    
   }
   add_action( 'customize_register', 'pogon_theme_customize_register' );
  
