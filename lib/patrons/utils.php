@@ -3,7 +3,7 @@
 use Carbon_Fields\Container;
 use Carbon_Fields\Field;
 
-add_action('carbon_register_fields', 'crb_patron');
+add_action('carbon_fields_register_fields', 'crb_patron');
 function crb_patron()
 {
     Container::make('post_meta', 'Kwota')

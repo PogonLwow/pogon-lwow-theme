@@ -3,11 +3,7 @@
 use Carbon_Fields\Container;
 use Carbon_Fields\Field;
 
-add_action( 'after_setup_theme', 'crb_load' );
-function crb_load() {
-    require_once( 'vendor/autoload.php' );
-    \Carbon_Fields\Carbon_Fields::boot();
-}
+
 
 
 // Info o motywie //
@@ -22,6 +18,12 @@ register_nav_menus(
         'footer_menu' => 'Footer Menu',
     )
 );
+
+add_filter("use_block_editor_for_post_type", "disable_gutenberg_editor");
+function disable_gutenberg_editor()
+{
+return false;
+}
 
 
 
@@ -127,3 +129,11 @@ add_theme_support('automatic-feed-links');
  ////////////////////////////////////////////////////////////////////
 
 add_theme_support( 'post-thumbnails' );
+
+
+
+add_action( 'after_setup_theme', 'crb_load' );
+function crb_load() {
+    require_once( 'vendor/autoload.php' );
+    \Carbon_Fields\Carbon_Fields::boot();
+}
