@@ -30,15 +30,8 @@
                 )); ?>
         </nav>
     </div>
-    <div class="social">
-        <a class="link link--social link--tw" href="<?php echo $general_options['twitter_link'] ?>">
-            <i class="icon-twitter"></i>
-        </a>
-        <a class="link link--social link--fb" href="<?php echo $general_options['fb_link']; ?>">
-            <i class="icon-facebook "></i>
+    <?php get_template_part('parts/social-links'); ?>
 
-        </a>
-    </div>
     </div>
 
 </div>

@@ -1,4 +1,3 @@
-<?php global $general_options; ?>
 <body data-ajax-url="<?php echo admin_url('admin-ajax.php'); ?>" class="background--<?php echo get_theme_mod('purpose'); ?>">
 
 <div class="container head">
@@ -15,13 +14,6 @@
         </div>
     </div>
 
-        <div class="social">
-            <span class="social__followUs">Zobacz nas na:</span>
-            <a class="link link--social link--tw" href="<?php echo $general_options['twitter_link'] ?>">
-                <i class="icon-twitter social__icon social__icon--tw"></i>
-            </a>
-            <a class="link link--social link--fb" href="<?php echo $general_options['fb_link'] ?>">
-                <i class="icon-facebook social__icon social__icon--fb"></i>
-            </a>
-        </div>
+    <?php get_template_part('parts/social-links'); ?>
+
 </div>

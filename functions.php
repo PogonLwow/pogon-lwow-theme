@@ -1,4 +1,15 @@
 <?php
+
+use Carbon_Fields\Container;
+use Carbon_Fields\Field;
+
+add_action( 'after_setup_theme', 'crb_load' );
+function crb_load() {
+    require_once( 'vendor/autoload.php' );
+    \Carbon_Fields\Carbon_Fields::boot();
+}
+
+
 // Info o motywie //
     $theme = wp_get_theme();
     $version = $theme->get('Version');
@@ -11,6 +22,8 @@ register_nav_menus(
         'footer_menu' => 'Footer Menu',
     )
 );
+
+
 
 ////////////////////////////////////////////////////////////////////
 // Register the Sidebar(s)
