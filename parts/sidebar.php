@@ -1,5 +1,3 @@
-<?php global $general_options; ?>
-
 <section class="section section--side">
     <?php dynamic_sidebar( 'Right Sidebar' ); ?>
 
@@ -28,6 +26,10 @@
         </a>
 
     </div>
+    <?php } elseif (get_theme_mod('purpose') == 'foundation') {?>
+        <?php show_links('collabs'); ?>
+        <?php show_links('partnerships'); ?>
+        <?php show_links('sponsors'); ?>
     <?php } ?>
 
 </section>
