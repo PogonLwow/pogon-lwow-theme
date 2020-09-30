@@ -27,9 +27,25 @@
 
     </div>
     <?php } elseif (get_theme_mod('purpose') == 'foundation') {?>
-        <?php show_links('collabs'); ?>
-        <?php show_links('partnerships'); ?>
-        <?php show_links('sponsors'); ?>
+            <section class="section section--white section--red-deco section--side section--margin-bottom-20">
+                <h4 class="section__title">Kluby partnerskie</h4>
+                <div class="sponsors">
+                    <?php show_links('partnerships'); ?>
+                </div>
+            </section>
+                <section class="section section--white section--red-deco section--side section--margin-bottom-20">
+                    <h4 class="section__title">Współpraca</h4>
+                    <div class="sponsors">
+                        <?php show_links('collabs'); ?>
+                    </div>
+                </section>
+
+                <section class="section section--white section--red-deco section--side section--margin-bottom-20">
+                    <h4 class="section__title">Wspierają nas</h4>
+                    <div class="sponsors">
+                        <?php show_links('sponsors'); ?>
+                    </div>
+                </section>
     <?php } ?>
 
 </section>

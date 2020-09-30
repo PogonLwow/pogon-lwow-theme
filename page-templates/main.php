@@ -16,6 +16,9 @@
     <?php get_template_part('parts/sidebar'); ?>
 
 </div>
+
+<?php if (get_theme_mod('purpose') == 'club') { ?>\
 <?php get_template_part('parts/sponsors'); ?>
+<?php } ?>
 
 <?php get_footer(); ?>

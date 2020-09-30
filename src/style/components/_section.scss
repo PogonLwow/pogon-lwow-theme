@@ -37,4 +37,8 @@
     &--red-deco {
         @include deco($red);
     }
+
+    &--margin-bottom-20 {
+        margin-bottom: 20px;
+    }
 }
