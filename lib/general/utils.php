@@ -39,16 +39,16 @@ add_filter('admin_footer_text', 'pogon_footer_admin');
 
 
 // Przypomina, by zainstalować wtyczki //
-function remind_to_do() {
+// function remind_to_do() {
 
 
 
-  if ( !is_plugin_active( 'carbon-fields/carbon-fields-plugin.php' ) ) {
-    echo '<div class="error"> <p>Należy zainstalować wtyczkę Carbon Fields</p></div>';
-  }
+//   if ( !is_plugin_active( 'carbon-fields/carbon-fields-plugin.php' ) ) {
+//     echo '<div class="error"> <p>Należy zainstalować wtyczkę Carbon Fields</p></div>';
+//   }
 
-}
-add_action( 'admin_notices', 'remind_to_do' );
+// }
+// add_action( 'admin_notices', 'remind_to_do' );
 
 // Dynamiczna zmiania roku //
 function comicpress_copyright()
