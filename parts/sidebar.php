@@ -28,7 +28,7 @@
     </div>
     <?php } elseif (get_theme_mod('purpose') == 'foundation') {?>
             <section class="section section--white section--red-deco section--side section--margin-bottom-20">
-                <h4 class="section__title">Kluby partnerskie</h4>
+                <h4 class="section__title">Nasi partnerzy</h4>
                 <div class="sponsors">
                     <?php show_links('partnerships'); ?>
                 </div>
