@@ -28,28 +28,30 @@ function crb_sponsor_link()
 
 // Najpierw wskazujemy z jakimi argumentami chcemy pozyskać wpisy
 function get_sponsors_array () {
-$sponsors_args = array(
-    'post_type' => 'sponsorowane',
-    'meta_query' => array(
-        array(
-            'key' => '_sponsor_pos',
-            'value' => 'sponsors',
-            // 'compare' => 'LIKE',
-        ),
-    )
-);}
+    return array(
+        'post_type' => 'sponsorowane',
+        'meta_query' => array(
+            array(
+                'key' => '_sponsor_pos',
+                'value' => 'sponsors',
+                // 'compare' => 'LIKE',
+            ),
+        )
+    );
+}
 
 function get_collabs_array () {
-return array(
-    'post_type' => 'sponsorowane',
-    'meta_query' => array(
-        array(
-            'key' => '_sponsor_pos',
-            'value' => 'collab',
-            // 'compare' => 'LIKE',
-        ),
-    )
-);}
+    return array(
+        'post_type' => 'sponsorowane',
+        'meta_query' => array(
+            array(
+                'key' => '_sponsor_pos',
+                'value' => 'collab',
+                // 'compare' => 'LIKE',
+            ),
+        )
+    );
+}
 
 function get_partnerships_array () {
     return array(
